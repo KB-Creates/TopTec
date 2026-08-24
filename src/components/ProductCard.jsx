@@ -13,7 +13,7 @@ const ProductCard = ({ product, className = "" }) => {
           <img 
             src={product.image || "/slider/cleanroom-hall.jpg"} 
             alt={product.name} 
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+            className="w-full h-full object-cover" 
           />
           <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
             <span className="px-2 py-1 sm:px-3 sm:py-1.5 bg-[#4A93C4] text-white text-[8px] sm:text-[9px] font-bold uppercase tracking-widest rounded-full shadow-lg shadow-[#4A93C4]/20 border border-white/20 flex items-center justify-center">
@@ -25,7 +25,7 @@ const ProductCard = ({ product, className = "" }) => {
         {/* Content Section */}
         <div className="p-4 sm:p-6 flex flex-col grow">
           <div className="mb-3 sm:mb-4">
-            <h3 className="text-lg sm:text-xl font-bold text-[#202124] mb-1.5 sm:mb-2 group-hover:text-[#4A93C4] transition-colors line-clamp-1">
+            <h3 className="text-[13px] sm:text-[14px] font-bold text-[#202124] mb-1.5 sm:mb-2 group-hover:text-[#4A93C4] transition-colors">
               {product.name}
             </h3>
             <p className="text-gray-500 text-[10px] sm:text-xs leading-relaxed line-clamp-2">

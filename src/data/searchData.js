@@ -13,14 +13,32 @@ export const searchData = [
   { name: 'Clean Room', type: 'Category', href: '/categories/sterile-processing' },
   { name: 'HVAC Systems', type: 'Category', href: '/categories/hvac-systems' },
 
-  // Subcategories - Air Filters
+  // Subcategories & Products - Air Filters
   { name: 'HEPA Filters (H13/H14)', type: 'Subcategory', href: '/filters/hepa' },
+  { name: 'High Temperature HEPA Filter', type: 'Product', href: '/product/high-temperature-hepa-filter' },
+  { name: 'H13 H14 Mini Pleat HEPA Filter for Pharmaceutical Industry', type: 'Product', href: '/product/h13-h14-mini-pleat-hepa-filter-pharmaceutical' },
+  { name: 'Gel Seal HEPA Filter Polyurethane Gel Sealed High Efficiency Air Filter For Cleanroom', type: 'Product', href: '/product/gel-seal-hepa-filter-polyurethane-cleanroom' },
   { name: 'Pre Filters', type: 'Subcategory', href: '/filters/pre' },
+  { name: 'Panel Pre Filter', type: 'Product', href: '/product/panel-pre-filter' },
+  { name: 'Fiberglass Panel Pre Filter for Paint Booth', type: 'Product', href: '/product/fiberglass-panel-pre-filter-paint-booth' },
+  { name: 'High Temperature Resistant Coarse Air Filter for Baked Oven', type: 'Product', href: '/product/high-temperature-coarse-air-filter-baked-oven' },
+  { name: 'G4/MERV8 Galvanized Frame Pleated Pre Filter', type: 'Product', href: '/product/g4-merv8-galvanized-frame-pleated-pre-filter' },
+  { name: 'Disposable Pleated Pre Filter', type: 'Product', href: '/product/disposable-pleated-pre-filter' },
   { name: 'Activated Carbon Filters', type: 'Subcategory', href: '/filters/carbon' },
+  { name: 'Pleated Activated Carbon Odor Removal Air Filter', type: 'Product', href: '/product/pleated-activated-carbon-odor-removal-air-filter' },
   { name: 'Bag Filters', type: 'Subcategory', href: '/filters/bag' },
+  { name: 'F5-F9 Synthetic Multi Pocket Filter', type: 'Product', href: '/product/f5-f9-synthetic-multi-pocket-filter' },
+  { name: 'Glass Fiber Compact Multi-pocket Bag Filter', type: 'Product', href: '/product/glass-fiber-compact-multi-pocket-bag-filter' },
   { name: 'V-Bank Filters', type: 'Subcategory', href: '/filters/v-bank' },
+  { name: 'Galvanized Frame V-Type HEPA Filter', type: 'Product', href: '/product/galvanized-frame-v-type-hepa-filter' },
+  { name: 'HV Combined HEPA Filter', type: 'Product', href: '/product/hv-combined-hepa-filter' },
+  { name: 'V-Bank Compact Filter', type: 'Product', href: '/product/v-bank-compact-filter' },
   { name: 'Box & Panel Filters', type: 'Subcategory', href: '/filters/box-panel' },
+  { name: 'Box Type HEPA Separator Filter', type: 'Product', href: '/product/box-type-hepa-separator-filter' },
   { name: 'Washable Filters', type: 'Subcategory', href: '/filters/washable' },
+  { name: 'Washed Pre Filter', type: 'Product', href: '/product/washed-pre-filter' },
+  { name: 'Permanent And Washable Aluminum Pre Filter', type: 'Product', href: '/product/permanent-and-washable-aluminum-pre-filter' },
+  { name: 'Washable Nylon Mesh Pre Filter', type: 'Product', href: '/product/washable-nylon-mesh-pre-filter' },
 
   // Subcategories - Air Cleaning
   { name: 'Laminar Air Flow (LAF) Hoods', type: 'Subcategory', href: '/air/laminar-flow' },
