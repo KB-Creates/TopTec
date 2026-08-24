@@ -17,6 +17,8 @@ import HVACSystems from './pages/categories/hvac-systems/index.jsx'
 import ProductPage from './pages/ProductPage.jsx'
 import AllProducts from './pages/AllProducts.jsx'
 
+import SubcategoryPage from './pages/categories/SubcategoryPage.jsx'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -54,7 +56,14 @@ const router = createBrowserRouter([
           { path: "hvac-systems", element: <HVACSystems /> },
         ]
       },
-      // Add more nested routes here
+      // Subcategory routes
+      { path: "filters/*", element: <SubcategoryPage /> },
+      { path: "air/*", element: <SubcategoryPage /> },
+      { path: "furniture/*", element: <SubcategoryPage /> },
+      { path: "machinery/*", element: <SubcategoryPage /> },
+      { path: "science/*", element: <SubcategoryPage /> },
+      { path: "sterile/*", element: <SubcategoryPage /> },
+      { path: "hvac/*", element: <SubcategoryPage /> },
     ],
   },
 ]);
