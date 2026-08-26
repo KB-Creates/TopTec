@@ -23,7 +23,9 @@ const AirCleaning = () => {
   return (
     <CategoryPage 
       title="Air Cleaning"
-      description="Laminar flow hoods, Class II biosafety cabinets, and dynamic air showers that maintain ISO Class 5 cleanroom standards for biotech labs."
+      description={`We offer a comprehensive range of reliable Air Cleaning and Cleanroom Equipment designed for controlled and contamination-sensitive environments. Our solutions are engineered to support efficient airflow management, contamination control, hygiene, and cleanroom integrity across pharmaceutical, biotechnology, healthcare, and laboratory applications.
+
+      With a strong focus on quality, precision, and reliability, we provide solutions that deliver consistent performance and long-term value. From individual equipment to complete cleanroom setups, our commitment is to provide dependable, high-performance equipment that supports modern pharmaceutical and cleanroom standards.`}
       icon={<Wind size={32} />}
       image="https://toptec.pk/wp-content/uploads/2024/04/Air-Shower-Image-768x768.png"
       subcategories={subcategories}

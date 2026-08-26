@@ -15,11 +15,11 @@ const ProductCard = ({ product, className = "" }) => {
             alt={product.name} 
             className="w-full h-full object-cover" 
           />
-          <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
+          {/* <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
             <span className="px-2 py-1 sm:px-3 sm:py-1.5 bg-[#4A93C4] text-white text-[8px] sm:text-[9px] font-bold uppercase tracking-widest rounded-full shadow-lg shadow-[#4A93C4]/20 border border-white/20 flex items-center justify-center">
               Premium Grade
             </span>
-          </div>
+          </div> */}
         </div>
 
         {/* Content Section */}

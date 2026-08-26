@@ -15,7 +15,7 @@ export const searchData = [
 
   // Subcategories & Products - Air Filters
   { name: 'HEPA Filters (H13/H14)', type: 'Subcategory', href: '/filters/hepa' },
-  { name: 'High Temperature HEPA Filter', type: 'Product', href: '/product/high-temperature-hepa-filter' },
+  { name: 'HEPA Filter', type: 'Product', href: '/product/hepa-filter' },
   { name: 'H13 H14 Mini Pleat HEPA Filter for Pharmaceutical Industry', type: 'Product', href: '/product/h13-h14-mini-pleat-hepa-filter-pharmaceutical' },
   { name: 'Gel Seal HEPA Filter Polyurethane Gel Sealed High Efficiency Air Filter For Cleanroom', type: 'Product', href: '/product/gel-seal-hepa-filter-polyurethane-cleanroom' },
   { name: 'Pre Filters', type: 'Subcategory', href: '/filters/pre' },

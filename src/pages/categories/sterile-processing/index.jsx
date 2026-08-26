@@ -21,7 +21,9 @@ const SterileProcessing = () => {
   return (
     <CategoryPage 
       title="Clean Room Solutions"
-      description={`TopTec is a leading provider of modular cleanroom solutions, offering advanced partition systems, airtight doors, and specialized antimicrobial flooring. We deliver comprehensive turnkey projects—from design and fabrication to validation and commissioning—ensuring full compliance with ISO, CGMP, and WHO standards.\n\nBy combining innovative materials with precision engineering, we create contamination-controlled environments essential for pharmaceutical and biotechnology research. Since 2016, TopTec has ensured that sterile facilities are built for high performance, long-term durability, and absolute safety.`}
+      description={`We provide complete Cleanroom Solutions designed for controlled, hygienic, and contamination-sensitive environments. Our solutions are engineered with a strong focus on quality, precision, functionality, and cleanroom integrity.
+
+      From individual components to complete turnkey cleanroom projects, we deliver professionally designed solutions tailored to specific client requirements. With experienced technical expertise and reliable execution, we ensure high-quality cleanroom environments suitable for pharmaceutical, healthcare, laboratory, and other critical applications.`}
       icon={<Layers size={32} />}
       image={cleanRoomBanner}
       subcategories={subcategories}

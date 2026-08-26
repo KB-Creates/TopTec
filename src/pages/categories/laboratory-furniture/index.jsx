@@ -30,7 +30,9 @@ const LaboratoryFurniture = () => {
   return (
     <CategoryPage 
       title="Laboratory Furniture"
-      description="SS 316L stainless steel workbenches, chemical-resistant lab tables, and modular storage systems for pharmaceutical QC laboratories."
+      description={`We offer high-quality, locally manufactured Laboratory Furniture designed for modern and demanding laboratory environments. Our solutions are available in both Powder Coated and Stainless Steel finishes, ensuring durability, hygiene, and long-term performance.
+
+      With in-house manufacturing and an experienced technical team, we provide fully customized solutions tailored to each client’s specific requirements. Our focus on precision, quality workmanship, and functional design ensures reliable solutions for a wide range of laboratory applications.`}
       icon={<Building2 size={32} />}
       image="/slider/lab-work.jpg"
       subcategories={subcategories}

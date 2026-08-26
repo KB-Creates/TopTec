@@ -15,7 +15,7 @@ const DropdownItem = ({ item }) => {
     >
       <Link
         to={item.href}
-        className="flex items-center justify-between px-4 py-2.5 text-[13px] text-[#3c4043] hover:bg-gray-50 hover:text-[#4A93C4] transition-colors group"
+        className="flex items-center justify-between px-4 py-2.5 text-[13px] text-[#3c4043] hover:bg-gray-50 hover:text-[#4A93C4] transition-colors group uppercase font-medium"
       >
         <span className="flex-1 mr-2">{item.name}</span>
         {hasSub && (
@@ -40,7 +40,7 @@ const DropdownItem = ({ item }) => {
                 <Link
                   key={idx}
                   to={sub.href}
-                  className="flex items-center justify-between px-4 py-2.5 text-[13px] text-[#3c4043] hover:bg-gray-50 hover:text-[#4A93C4] transition-colors"
+                  className="flex items-center justify-between px-4 py-2.5 text-[13px] text-[#3c4043] hover:bg-gray-50 hover:text-[#4A93C4] transition-colors uppercase font-medium"
                 >
                   <span className="flex-1">{sub.name}</span>
                 </Link>

@@ -19,7 +19,9 @@ const ProductionMachinery = () => {
   return (
     <CategoryPage 
       title="Production Machinery"
-      description="GMP-compliant tablet presses, capsule filling machines, liquid filling lines, and ointment manufacturing equipment for pharma production."
+      description={`We provide a comprehensive range of Pharmaceutical Production Machinery designed to meet the diverse requirements of modern pharmaceutical manufacturing. Our machinery portfolio includes both locally manufactured and imported solutions, allowing clients to choose according to their specific application and requirements.
+
+      We cater to multiple pharmaceutical production sections with reliable, efficient, and technically advanced machinery solutions. With a focus on quality, performance, and customization, we deliver complete machinery solutions designed to support efficient production and consistent results.`}
       icon={<Settings size={32} />}
       image="/slider/production.jpg"
       subcategories={subcategories}

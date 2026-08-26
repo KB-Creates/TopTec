@@ -20,7 +20,8 @@ const AirFilters = () => {
   return (
     <CategoryPage 
       title="Air Filters"
-      description={"Air filters are vital for removing airborne pollutants and microorganisms, safeguarding health and preserving industrial product quality. In cleanrooms and laboratories, they provide critical particle control while protecting sensitive equipment from environmental damage.\n\nWidely utilized in HVAC and AHU systems across pharmaceutical and medical facilities, we offer a comprehensive selection to meet diverse technical needs, including HEPA, V-bank, carbon, and specialized multi-stage pre-filters."}
+      description={`Air Filters are essential for maintaining clean, controlled, and efficient airflow. Designed to remove dust, airborne particles, and contaminants from the air, they are ideal for pharmaceutical, industrial, commercial, and cleanroom environments. 
+      They help protect products, equipment, and processes from airborne contamination while supporting high standards of hygiene, safety, and air quality—delivering reliable performance for clean, safe, and controlled working environments.`}  
       icon={<Filter size={32} />}
       image="https://toptec.pk/wp-content/uploads/2024/07/201909101442246985.jpg"
       subcategories={subcategories}

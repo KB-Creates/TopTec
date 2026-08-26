@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Search as SearchIcon, Menu, ArrowRight, CornerDownLeft } from 'lucide-react';
+import { X, Search as SearchIcon, Menu, ArrowRight, CornerDownLeft, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
@@ -8,6 +8,63 @@ import AnnouncementBar from './AnnouncementBar';
 import Search from './Search';
 import NavItem from './NavItem';
 import { searchData } from '../data/searchData';
+
+const MobileNavItem = ({ item, onClose }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const hasSubcategories = item.subcategories && item.subcategories.length > 0;
+
+  return (
+    <div className="flex flex-col">
+      <div className="flex items-center justify-between p-3.5 hover:bg-gray-50 rounded-xl transition-colors">
+        <Link
+          to={item.href}
+          onClick={onClose}
+          className="text-sm font-bold uppercase tracking-widest text-[#202124] flex-1 no-underline"
+        >
+          {item.name}
+        </Link>
+        {hasSubcategories && (
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="p-1.5 text-gray-500 hover:text-[#4A93C4] transition-colors cursor-pointer"
+          >
+            <ChevronDown size={18} className={`transition-transform duration-200 ${isOpen ? 'rotate-180 text-[#4A93C4]' : ''}`} />
+          </button>
+        )}
+      </div>
+
+      {hasSubcategories && isOpen && (
+        <div className="pl-4 pr-2 py-1 flex flex-col gap-1 border-l-2 border-[#4A93C4]/30 ml-4 mb-2">
+          {item.subcategories.map((sub, idx) => (
+            <div key={idx} className="flex flex-col">
+              <Link
+                to={sub.href}
+                onClick={onClose}
+                className="px-3 py-2 text-xs font-bold uppercase tracking-wider text-[#3c4043] hover:text-[#4A93C4] hover:bg-gray-50 rounded-lg transition-colors block"
+              >
+                {sub.name}
+              </Link>
+              {sub.subcategories && sub.subcategories.length > 0 && (
+                <div className="pl-3 py-1 flex flex-col gap-1 border-l border-gray-200 ml-2">
+                  {sub.subcategories.map((subSub, subIdx) => (
+                    <Link
+                      key={subIdx}
+                      to={subSub.href}
+                      onClick={onClose}
+                      className="px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-gray-500 hover:text-[#4A93C4] block"
+                    >
+                      {subSub.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -451,25 +508,11 @@ const Navbar = () => {
                 <span className="text-[11px] font-bold text-[#4A93C4] uppercase tracking-wider">Main Links</span>
               </div>
               {navLinks.map((item) => (
-                item.href.startsWith('/') && !item.href.includes('#') ? (
-                  <Link 
-                    key={item.name} 
-                    to={item.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="p-4 text-sm font-bold uppercase tracking-widest text-[#202124] hover:bg-gray-50 rounded-xl cursor-pointer transition-colors no-underline block"
-                  >
-                    {item.name}
-                  </Link>
-                ) : (
-                  <a 
-                    key={item.name} 
-                    href={item.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="p-4 text-sm font-bold uppercase tracking-widest text-[#202124] hover:bg-gray-50 rounded-xl cursor-pointer transition-colors no-underline block"
-                  >
-                    {item.name}
-                  </a>
-                )
+                <MobileNavItem 
+                  key={item.name} 
+                  item={item} 
+                  onClose={() => setIsMobileMenuOpen(false)} 
+                />
               ))}
               
               <div className="px-4 py-2 mt-4">

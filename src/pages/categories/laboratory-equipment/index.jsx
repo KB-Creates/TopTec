@@ -17,7 +17,9 @@ const LaboratoryEquipment = () => {
   return (
     <CategoryPage 
       title="Laboratory Equipment"
-      description="HPLC systems, dissolution testers, microbiology incubators, and analytical instruments for pharmaceutical quality control testing."
+      description={`We offer a comprehensive range of high-quality Laboratory Equipment sourced from reputed international and specialized manufacturers. Our portfolio covers a wide range of laboratory and analytical applications, with solutions available in premium branded as well as high-grade international options.
+
+      We provide flexibility to select the preferred brand and specification according to the client’s application, performance requirements, and budget. With an extensive product range and reliable sourcing network, we deliver accurate, dependable, and application-focused laboratory solutions.`}
       icon={<FlaskConical size={32} />}
       image="/slider/lab-microscope.jpg"
       subcategories={subcategories}

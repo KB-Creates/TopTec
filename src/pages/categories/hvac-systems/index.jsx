@@ -20,7 +20,9 @@ const HVACSystems = () => {
   return (
     <CategoryPage 
       title="HVAC Systems"
-      description="Custom air handling units, pharmaceutical-grade chillers, precision HVAC controls, and validated environmental monitoring systems."
+      description={`We provide complete HVAC Solutions designed to maintain precise temperature, humidity, pressure, and air quality in controlled environments. Our expertise covers complete HVAC system design, supply, installation, and commissioning for pharmaceutical, cleanroom, industrial, and commercial applications.
+
+      With a strong focus on energy efficiency, reliable performance, and effective airflow management, we deliver solutions tailored to specific project requirements. From individual HVAC requirements to complete turnkey systems, our experienced technical team ensures professional execution and dependable long-term performance.`}
       icon={<Zap size={32} />}
       image="/slider/cleanroom-suit.jpg"
       subcategories={subcategories}

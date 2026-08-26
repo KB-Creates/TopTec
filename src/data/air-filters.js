@@ -1,14 +1,13 @@
 export const airFiltersProducts = [
   {
-    slug: 'high-temperature-hepa-filter',
-    name: 'High Temperature HEPA Filter',
+    slug: 'hepa-filter',
+    name: 'HEPA Filter',
     category: 'Air Filters',
     subcategory: 'HEPA Filters',
     subcategorySlug: '/filters/hepa',
-    description: 'HiTempex® HT filters are engineered for high temperature applications up to 350°C (with peak resistance up to 400°C). Manufactured with specially selected components including micro glass fiber media, corrugated aluminum foil separators, and HT silicone or ceramic sealants, they are ideal for paint drying ovens, sterile depyrogenation tunnels, and high-efficiency filtration in extreme heat environments.',
+    description: 'HEPA (High-Efficiency Particulate Air) filters are a type of air filter designed to remove at least 99.97% of airborne particles 0.3 micrometers (µm) in diameter. They are widely used in cleanrooms, hospitals, pharmaceutical facilities, and HVAC systems to maintain high air quality. Our HEPA filters are constructed with high-quality micro glass fiber media and can be manufactured with various frame materials and sealing options to meet specific application requirements.',
     image: 'https://toptec.pk/wp-content/uploads/2024/07/thumbnail-720-tiny.jpg',
     features: [
-      'Operating temperature ranges: 250°C (HT-250) and 350°C (HT-350, up to 400°C peak)',
       'Efficiencies: 95%, 99%, 99.97% and 99.995% (H13/H14 as per BS EN 1822:2009)',
       'Frame Options: Galvanized Steel, Aluminized Steel, Stainless Steel (SUS)',
       'Frame Types: No Header (NH), Single Header (SH), Double Header (DH)',
@@ -39,16 +38,16 @@ export const airFiltersProducts = [
     }
   },
   {
-    slug: 'galvanized-frame-v-type-hepa-filter',
-    name: 'Galvanized Frame V-Type HEPA Filter',
+    slug: 'v-type-hepa-filter',
+    name: 'V-Type HEPA Filter',
     category: 'Air Filters',
     subcategory: 'V-Bank Filters',
     subcategorySlug: '/filters/v-bank',
-    description: 'The Galvanized Frame V-Type HEPA Filter (BOX Type HEPA V-BANK Filter) features a double-layer filter material structure for layered filtration. Built with high-strength galvanized steel frame, it offers high airflow capacity, low pressure drop, high dust-holding capacity, and high moisture & chemical resistance up to 300°C operating environments.',
+    description: 'The V-Type HEPA Filter features a double-layer filter material structure for layered filtration. Built with high-strength galvanized steel frame, it offers high airflow capacity, low pressure drop, high dust-holding capacity, and high moisture & chemical resistance up to 300°C operating environments.',
     image: 'https://toptec.pk/wp-content/uploads/2024/07/201909101442246985.jpg',
     features: [
       'Uniform texture with double-layer filter media structure for layered filtration',
-      'Galvanized steel rigid frame construction for high structural stiffness',
+      'Steel rigid frame construction for high structural stiffness',
       'Filter Efficiency Options: E11, H13 (99.99%), and H14 (99.995%)',
       'High specific surface area with large dust-holding capacity and minimal resistance',
       'High hydrophobicity providing exceptional moisture and corrosion resistance',
@@ -77,12 +76,12 @@ export const airFiltersProducts = [
     }
   },
   {
-    slug: 'pleated-activated-carbon-odor-removal-air-filter',
-    name: 'Pleated Activated Carbon Odor Removal Air Filter',
+    slug: 'pleated-air-filter',
+    name: 'Pleated Air Filter',
     category: 'Air Filters',
     subcategory: 'Activated Carbon Filters',
     subcategorySlug: '/filters/carbon',
-    description: 'The Pleated Activated Carbon Odor Removal Air Filter is designed for high-efficiency gas-phase filtration and deodorization. Featuring a rich pore structure with a large specific surface area, it provides exceptional adsorption capacity for harmful gases (such as formaldehyde, toluene, and VOCs) with low airflow resistance and low service cost.',
+    description: 'The Pleated Air Filter is designed for high-efficiency gas-phase filtration and deodorization. Featuring a rich pore structure with a large specific surface area, it provides exceptional adsorption capacity for harmful gases (such as formaldehyde, toluene, and VOCs) with low airflow resistance and low service cost.',
     image: 'https://toptec.pk/wp-content/uploads/2024/07/201909060948298944.jpg',
     features: [
       'Rich pore structure with large specific surface area for maximum gas adsorption',
@@ -111,12 +110,12 @@ export const airFiltersProducts = [
     }
   },
   {
-    slug: 'hv-combined-hepa-filter',
-    name: 'HV Combined HEPA Filter',
+    slug: 'hv-combined-bag-filter',
+    name: 'HV Combined Bag Filter',
     category: 'Air Filters',
-    subcategory: 'V-Bank Filters',
-    subcategorySlug: '/filters/v-bank',
-    description: 'The HV Combined HEPA Filter (V Bank HVAC Filter) is engineered with a double-layer filtration material structure for high-efficiency layered purification. Featuring a galvanized steel casing and V-bank design, it provides exceptional airflow capacity, low pressure drop, high dust-holding power, and moisture resistance up to 300°C.',
+    subcategory: 'Bag Filters',
+    subcategorySlug: '/filters/bag',
+    description: 'The HV Combined Bag Filter (V Bank HVAC Filter) is engineered with a double-layer filtration material structure for high-efficiency layered purification. Featuring a galvanized steel casing and V-bank design, it provides exceptional airflow capacity, low pressure drop, high dust-holding power, and moisture resistance up to 300°C.',
     image: 'https://toptec.pk/wp-content/uploads/2024/07/1-2-f5-f9-medium-replacement-air-filter_01m.jpg',
     features: [
       'Uniform texture with double-layer filtration material structure for layered purification',
@@ -188,7 +187,7 @@ export const airFiltersProducts = [
     subcategory: 'Washable / Reusable Filters',
     subcategorySlug: '/filters/washable',
     description: 'The Washed Pre Filter (Extended Surface Washable Pre Filter) is a high-performance washable and reusable pre-filter engineered for air conditioning, industrial workshops, and large-scale air compressor intake systems. Designed to protect secondary HEPA filters from heavy dust accumulation, its durable metal frame allows media replacement while the media itself can be washed 1-2 times.',
-    image: 'https://toptec.pk/wp-content/uploads/2024/07/1-3-1-hepa-purifier-replacement-air-filter_01m.jpg',
+    image: '/images/washed-pre-filter.jpg',
     features: [
       'Extended surface area design maximizing air volume and dust-holding capacity',
       'Washable & reusable filter media (can be washed 1-2 times per lifecycle)',
@@ -213,43 +212,43 @@ export const airFiltersProducts = [
       ]
     }
   },
-  {
-    slug: 'v-bank-compact-filter',
-    name: 'V-Bank Compact Filter',
-    category: 'Air Filters',
-    subcategory: 'V-Bank Filters',
-    subcategorySlug: '/filters/v-bank',
-    description: 'The V-Bank Compact Filter in an all-plastic frame features wet-laid micro fine fiber media in a unique pleat-in-pleat V-bank configuration with up to 200 sq. ft. of media area. Delivering large volume airflow, high dust-holding capacity, and water resistance, it offers significant energy savings with a low average pressure drop.',
-    image: 'https://toptec.pk/wp-content/uploads/2024/07/201909101442246985.jpg',
-    features: [
-      'Wet-laid micro fine fiber media in unique pleat-in-pleat V-bank design (up to 200 sq ft media area)',
-      '100% all-plastic frame construction, completely incinerable and environmentally friendly',
-      'Filter Classes: M6, F7, F8, F9, H10, H11, H13, and H14',
-      'Compact construction engineered for large volume airflow rates',
-      'Self-supporting, rigid structure allowing multi-directional airflow & flexible installation',
-      'Water-resistant media with 100% relative humidity tolerance',
-      'Individually factory-tested with compliance label indicating airflow, pressure drop, and efficiency'
-    ],
-    specs: {
-      'Filter Classes': 'M6, F7, F8, F9, H10, H11, H13, H14',
-      'Frame Material': '100% Rigid Plastic (Incinerable)',
-      'Frame Types': 'Single Flange / Box Type',
-      'Filter Media': 'Fine Fiberglass Paper / Polypropylene Fiber',
-      'Separator': 'Hot Melt Bead',
-      'Sealant': 'Polyurethane',
-      'Max Operating Temp': '80°C (170°F)',
-      'Final Resistance': '500 Pa (2.0" W.G.)',
-      'Flammability': 'UL Classified',
-      'Max Humidity': '100% RH'
-    },
-    technicalTable: {
-      headers: ['Filter Class', 'Frame Material', 'Frame Type', 'Max Temp', 'Incinerability', 'Max Humidity'],
-      rows: [
-        ['M6 - F9 (Medium)', '100% Rigid Plastic', 'Single Flange / Box Type', '80°C', 'Fully Incinerable', '100% RH'],
-        ['H10 - H14 (HEPA)', '100% Rigid Plastic', 'Single Flange / Box Type', '80°C', 'Fully Incinerable', '100% RH'],
-      ]
-    }
-  },
+  // {
+  //   slug: 'v-bank-compact-filter',
+  //   name: 'V-Bank Compact Filter',
+  //   category: 'Air Filters',
+  //   subcategory: 'V-Bank Filters',
+  //   subcategorySlug: '/filters/v-bank',
+  //   description: 'The V-Bank Compact Filter in an all-plastic frame features wet-laid micro fine fiber media in a unique pleat-in-pleat V-bank configuration with up to 200 sq. ft. of media area. Delivering large volume airflow, high dust-holding capacity, and water resistance, it offers significant energy savings with a low average pressure drop.',
+  //   image: 'https://toptec.pk/wp-content/uploads/2024/07/201909101442246985.jpg',
+  //   features: [
+  //     'Wet-laid micro fine fiber media in unique pleat-in-pleat V-bank design (up to 200 sq ft media area)',
+  //     '100% all-plastic frame construction, completely incinerable and environmentally friendly',
+  //     'Filter Classes: M6, F7, F8, F9, H10, H11, H13, and H14',
+  //     'Compact construction engineered for large volume airflow rates',
+  //     'Self-supporting, rigid structure allowing multi-directional airflow & flexible installation',
+  //     'Water-resistant media with 100% relative humidity tolerance',
+  //     'Individually factory-tested with compliance label indicating airflow, pressure drop, and efficiency'
+  //   ],
+  //   specs: {
+  //     'Filter Classes': 'M6, F7, F8, F9, H10, H11, H13, H14',
+  //     'Frame Material': '100% Rigid Plastic (Incinerable)',
+  //     'Frame Types': 'Single Flange / Box Type',
+  //     'Filter Media': 'Fine Fiberglass Paper / Polypropylene Fiber',
+  //     'Separator': 'Hot Melt Bead',
+  //     'Sealant': 'Polyurethane',
+  //     'Max Operating Temp': '80°C (170°F)',
+  //     'Final Resistance': '500 Pa (2.0" W.G.)',
+  //     'Flammability': 'UL Classified',
+  //     'Max Humidity': '100% RH'
+  //   },
+  //   technicalTable: {
+  //     headers: ['Filter Class', 'Frame Material', 'Frame Type', 'Max Temp', 'Incinerability', 'Max Humidity'],
+  //     rows: [
+  //       ['M6 - F9 (Medium)', '100% Rigid Plastic', 'Single Flange / Box Type', '80°C', 'Fully Incinerable', '100% RH'],
+  //       ['H10 - H14 (HEPA)', '100% Rigid Plastic', 'Single Flange / Box Type', '80°C', 'Fully Incinerable', '100% RH'],
+  //     ]
+  //   }
+  // },
   {
     slug: 'h13-h14-mini-pleat-hepa-filter-pharmaceutical',
     image: 'https://toptec.pk/wp-content/uploads/2024/07/1-3-1-hepa-purifier-replacement-air-filter_01m.jpg',
@@ -297,44 +296,44 @@ export const airFiltersProducts = [
       ]
     }
   },
-  {
-    slug: 'gel-seal-hepa-filter-polyurethane-cleanroom',
-    name: 'Gel Seal HEPA Filter Polyurethane Gel Sealed High Efficiency Air Filter For Cleanroom',
-    category: 'Air Filters',
-    subcategory: 'HEPA Filters',
-    subcategorySlug: '/filters/hepa',
-    description: 'The Gel Seal HEPA Filter is a zero-leakage high-efficiency particulate air filter engineered for cleanroom ceiling ducted modules and knife-edge housings. Featuring built-in frame gel grooves filled with non-flowing, non-hardening polyurethane gel sealant (available in Standard Gel 80mm and Reverse Gel 75mm/93mm depths), it provides thorough air bypass elimination with efficiencies up to 99.9995%.',
-    image: '/images/gel-seal-hepa-filter-polyurethane-cleanroom.png',
-    features: [
-      'Built-in frame gel groove with non-flowing, non-hardening polyurethane gel for zero-leakage sealing',
-      'Dual structural types: Standard Gel Seal (80mm frame depth) and Reverse Gel Seal (75mm/93mm frame depth)',
-      'Reverse Gel design supports indoor-side disassembly & maintenance without pipeline dismantling',
-      'High filtration efficiencies: 99.99%, 99.995%, and 99.9995% (H13, H14, U15 grades)',
-      'Extruded anodized aluminum rigid frame with hot-melt glue spacing (no metal corrosion risk)',
-      'UL Classified fire safety certification with 100% relative humidity resistance at 80°C constant temp',
-      'Perfect replacement for permanent ceiling ducted air filtration modules and knife-edge housings'
-    ],
-    specs: {
-      'Efficiency Grades': '99.99%, 99.995%, 99.9995% (H13 / H14 / U15)',
-      'Sealing Mechanism': 'Polyurethane Gel (Non-flowing / Non-hardening)',
-      'Frame Material': 'Extruded Anodized Aluminum',
-      'Frame Types': 'Standard Gel Seal & Reverse Gel Seal',
-      'Frame Depths': 'Standard: 80mm (3-1/8"); Reverse Gel: 75mm (3"), 93mm (3-7/8")',
-      'Media Type': 'Wet-Laid Microfine Glass Paper',
-      'Separator': 'Hot-Melt Glue Spacing',
-      'Max Operating Temp': '80°C (170°F)',
-      'Final Resistance': '600 Pa (2.4" W.G.)',
-      'Flame Rating': 'UL Classified Fire Safety',
-      'Max Humidity': '100% RH'
-    },
-    technicalTable: {
-      headers: ['Frame Classification', 'Frame Depth (mm)', 'Sealing Method', 'Efficiency Options', 'Max Temp & Humidity'],
-      rows: [
-        ['Standard Gel Seal', '80 mm (3-1/8")', 'Polyurethane Gel Groove', '99.99% / 99.995% / 99.9995%', '80°C / 100% RH'],
-        ['Reverse Gel Seal', '75 mm / 93 mm', 'Rear Gel Groove (Indoor Maint.)', '99.99% / 99.995% / 99.9995%', '80°C / 100% RH'],
-      ]
-    }
-  },
+  // {
+  //   slug: 'gel-seal-hepa-filter-polyurethane-cleanroom',
+  //   name: 'Gel Seal HEPA Filter Polyurethane Gel Sealed High Efficiency Air Filter For Cleanroom',
+  //   category: 'Air Filters',
+  //   subcategory: 'HEPA Filters',
+  //   subcategorySlug: '/filters/hepa',
+  //   description: 'The Gel Seal HEPA Filter is a zero-leakage high-efficiency particulate air filter engineered for cleanroom ceiling ducted modules and knife-edge housings. Featuring built-in frame gel grooves filled with non-flowing, non-hardening polyurethane gel sealant (available in Standard Gel 80mm and Reverse Gel 75mm/93mm depths), it provides thorough air bypass elimination with efficiencies up to 99.9995%.',
+  //   image: '/images/gel-seal-hepa-filter-polyurethane-cleanroom.png',
+  //   features: [
+  //     'Built-in frame gel groove with non-flowing, non-hardening polyurethane gel for zero-leakage sealing',
+  //     'Dual structural types: Standard Gel Seal (80mm frame depth) and Reverse Gel Seal (75mm/93mm frame depth)',
+  //     'Reverse Gel design supports indoor-side disassembly & maintenance without pipeline dismantling',
+  //     'High filtration efficiencies: 99.99%, 99.995%, and 99.9995% (H13, H14, U15 grades)',
+  //     'Extruded anodized aluminum rigid frame with hot-melt glue spacing (no metal corrosion risk)',
+  //     'UL Classified fire safety certification with 100% relative humidity resistance at 80°C constant temp',
+  //     'Perfect replacement for permanent ceiling ducted air filtration modules and knife-edge housings'
+  //   ],
+  //   specs: {
+  //     'Efficiency Grades': '99.99%, 99.995%, 99.9995% (H13 / H14 / U15)',
+  //     'Sealing Mechanism': 'Polyurethane Gel (Non-flowing / Non-hardening)',
+  //     'Frame Material': 'Extruded Anodized Aluminum',
+  //     'Frame Types': 'Standard Gel Seal & Reverse Gel Seal',
+  //     'Frame Depths': 'Standard: 80mm (3-1/8"); Reverse Gel: 75mm (3"), 93mm (3-7/8")',
+  //     'Media Type': 'Wet-Laid Microfine Glass Paper',
+  //     'Separator': 'Hot-Melt Glue Spacing',
+  //     'Max Operating Temp': '80°C (170°F)',
+  //     'Final Resistance': '600 Pa (2.4" W.G.)',
+  //     'Flame Rating': 'UL Classified Fire Safety',
+  //     'Max Humidity': '100% RH'
+  //   },
+  //   technicalTable: {
+  //     headers: ['Frame Classification', 'Frame Depth (mm)', 'Sealing Method', 'Efficiency Options', 'Max Temp & Humidity'],
+  //     rows: [
+  //       ['Standard Gel Seal', '80 mm (3-1/8")', 'Polyurethane Gel Groove', '99.99% / 99.995% / 99.9995%', '80°C / 100% RH'],
+  //       ['Reverse Gel Seal', '75 mm / 93 mm', 'Rear Gel Groove (Indoor Maint.)', '99.99% / 99.995% / 99.9995%', '80°C / 100% RH'],
+  //     ]
+  //   }
+  // },
   {
     slug: 'box-type-hepa-separator-filter',
     name: 'Box Type HEPA Separator Filter',
