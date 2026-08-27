@@ -23,7 +23,7 @@ const AirFilters = () => {
       description={`Air Filters are essential for maintaining clean, controlled, and efficient airflow. Designed to remove dust, airborne particles, and contaminants from the air, they are ideal for pharmaceutical, industrial, commercial, and cleanroom environments. 
       They help protect products, equipment, and processes from airborne contamination while supporting high standards of hygiene, safety, and air quality—delivering reliable performance for clean, safe, and controlled working environments.`}  
       icon={<Filter size={32} />}
-      image="https://toptec.pk/wp-content/uploads/2024/07/201909101442246985.jpg"
+      image="/images/airfilters.jpg"
       subcategories={subcategories}
       products={airFiltersProducts}
     />

@@ -341,7 +341,7 @@ export const airFiltersProducts = [
     subcategory: 'Box & Panel Filters',
     subcategorySlug: '/filters/box-panel',
     description: 'The Box Type HEPA Separator Filter features corrugated aluminum separators and a rigid galvanized steel box frame to provide uniform face velocity and high dust-holding capacity. Available in F6, F7, and F8 efficiency classes, it is engineered for HVAC air conditioning systems and preparatory filtration in cleanrooms.',
-    image: '/images/box-type-hepa-separator-filter.png',
+    image: '/images/box-type-hepa-separator-filter.jpg',
     features: [
       'Corrugated aluminum foil separators ensuring uniform air distribution across filter face',
       'High versatility with large filtration surface area, big airflow capacity, and high efficiency',
@@ -378,7 +378,7 @@ export const airFiltersProducts = [
     subcategory: 'Bag Filters',
     subcategorySlug: '/filters/bag',
     description: 'The F5-F9 Synthetic Multi Pocket Filter (Bag Filter) is constructed with Meltblown PP synthetic media and extruded aluminum or galvanized steel headers. Offering a large filtration surface area with low airflow resistance, high dust holding capacity, and low energy consumption, it is widely applied in commercial HVAC systems, cleanroom air supply, automotive plants, and public buildings.',
-    image: '/images/f5-f9-synthetic-multi-pocket-filter.png',
+    image: '/images/f5-f9-synthetic-multi-pocket-filter.jpg',
     features: [
       'Multi-pocket design maximizing effective filtration surface area and dust-holding capacity',
       'High-grade Meltblown PP synthetic filter media ensuring long operational lifespan',

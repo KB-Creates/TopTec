@@ -9,7 +9,7 @@ const ProductCard = ({ product, className = "" }) => {
     <div className={`group bg-white border border-gray-100 rounded-xl sm:rounded-2xl flex flex-col h-full hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 overflow-hidden ${className}`}>
       <Link to={`/product/${slug}`} className="cursor-pointer flex flex-col h-full">
         {/* Image Container */}
-        <div className="relative aspect-4/3 bg-gray-100 overflow-hidden">
+        <div className="relative aspect-square bg-gray-100 overflow-hidden">
           <img 
             src={product.image || "/slider/cleanroom-hall.jpg"} 
             alt={product.name} 
