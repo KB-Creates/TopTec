@@ -72,7 +72,7 @@ const SubcategoryPage = () => {
             <div className="flex flex-wrap items-center gap-2 text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#5f6368] mb-6 sm:mb-10 bg-white/60 backdrop-blur-sm px-4 sm:px-6 py-2.5 rounded-full border border-gray-100 shadow-xs w-fit box-border max-w-full">
               <Link to="/" className="hover:text-[#4A93C4] transition-colors shrink-0">Home</Link>
               <ChevronRight size={10} className="text-gray-300 shrink-0" />
-              <Link to="/categories/air-filters" className="hover:text-[#4A93C4] transition-colors shrink-0">Categories</Link>
+              <Link to={parentCategorySlug ? `/categories/${parentCategorySlug}` : "/categories/laboratory-equipment"} className="hover:text-[#4A93C4] transition-colors shrink-0">Categories</Link>
               <ChevronRight size={10} className="text-gray-300 shrink-0" />
               {parentCategorySlug ? (
                 <Link to={`/categories/${parentCategorySlug}`} className="hover:text-[#4A93C4] transition-colors shrink-0">{parentCategory}</Link>

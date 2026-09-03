@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="blueBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="50%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="metalBezel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="glassWindow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+
+  <!-- Floor Shadow -->
+  <ellipse cx="400" cy="670" rx="280" ry="30" fill="#0f172a" opacity="0.12" filter="blur(10px)"/>
+
+  <!-- Main Cabinet (Blue Enclosure with 3D Depth) -->
+  <g filter="url(#shadow)">
+    <!-- Right 3D Side Panel -->
+    <path d="M 520 240 L 620 280 L 620 600 L 520 570 Z" fill="#172554"/>
+    <!-- Top Slanted Panel -->
+    <polygon points="260,240 520,240 520,360 260,360" fill="#2563eb"/>
+    <!-- Main Front Lower Body -->
+    <rect x="260" y="360" width="260" height="210" rx="4" fill="url(#blueBody)"/>
+
+    <!-- Slanted Top Screen Bezel Section -->
+    <polygon points="270,250 510,250 510,345 270,345" fill="#1e293b"/>
+    <!-- 4.3" Touchscreen Display -->
+    <rect x="300" y="260" width="180" height="70" rx="6" fill="url(#screenGrad)" stroke="#38bdf8" stroke-width="2"/>
+    <text x="390" y="290" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8" text-anchor="middle">STOMACHER HOMOGENIZER</text>
+    <text x="390" y="312" font-family="monospace" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">99:59:59 | 12 SLAPS/S</text>
+
+    <!-- Front Door (Stainless Steel Frame with Tempered Glass Window) -->
+    <rect x="280" y="380" width="220" height="175" rx="10" fill="url(#metalBezel)"/>
+    <rect x="300" y="400" width="180" height="135" rx="6" fill="url(#glassWindow)" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Slapping Paddles Visible Behind Glass -->
+    <rect x="330" y="420" width="55" height="95" rx="4" fill="#94a3b8" opacity="0.6"/>
+    <rect x="395" y="420" width="55" height="95" rx="4" fill="#64748b" opacity="0.6"/>
+
+    <!-- Door Lock Handle -->
+    <rect x="500" y="440" width="16" height="50" rx="8" fill="url(#metalBezel)"/>
+    <circle cx="508" cy="465" r="5" fill="#475569"/>
+
+    <!-- FAITHFUL Brand Header -->
+    <text x="260" y="215" font-family="sans-serif" font-size="16" font-weight="900" fill="#16a34a" letter-spacing="2">FAITHFUL</text>
+    <text x="520" y="215" font-family="sans-serif" font-size="13" font-weight="700" fill="#64748b" text-anchor="end">FA-05C / FA-04CS / FA-04C</text>
+  </g>
+
+  <!-- Spec Badge -->
+  <g opacity="0.95">
+    <rect x="40" y="40" width="350" height="68" rx="34" fill="#ffffff" filter="url(#shadow)"/>
+    <circle cx="74" cy="74" r="22" fill="#2563eb"/>
+    <path d="M 68 74 L 72 78 L 80 70" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="108" y="68" font-family="sans-serif" font-size="13" font-weight="800" fill="#0f172a">ASEPTIC STOMACHER BLENDER</text>
+    <text x="108" y="86" font-family="sans-serif" font-size="11" font-weight="600" fill="#64748b">4.3" Touchscreen • UV Disinfection • 3-12 Slaps/s</text>
+  </g>
+</svg>

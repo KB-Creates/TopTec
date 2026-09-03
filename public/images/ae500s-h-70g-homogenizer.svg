@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="steelRod" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="30%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="basePlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="motorBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="tealPanel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- Studio Floor Shadow -->
+  <ellipse cx="400" cy="710" rx="220" ry="24" fill="#0f172a" opacity="0.1" filter="blur(8px)"/>
+
+  <!-- Base Plate (Green Teal Heavy Base) -->
+  <g filter="url(#shadow)">
+    <!-- Base Plate 3D Depth -->
+    <path d="M 240 680 L 560 680 L 580 705 L 220 705 Z" fill="#065f46"/>
+    <!-- Base Plate Top Surface -->
+    <polygon points="240,680 560,680 540,650 260,650" fill="url(#basePlate)"/>
+  </g>
+
+  <!-- Vertical Stainless Steel Support Rod -->
+  <rect x="340" y="160" width="18" height="500" rx="9" fill="url(#steelRod)" filter="url(#shadow)"/>
+
+  <!-- Mounting Bracket Clamp -->
+  <rect x="330" y="270" width="40" height="35" rx="6" fill="#334155"/>
+  <circle cx="380" cy="287" r="10" fill="#64748b"/>
+  <circle cx="380" cy="287" r="5" fill="#1e293b"/>
+
+  <!-- Main Motor Drive Unit -->
+  <g filter="url(#shadow)">
+    <!-- Motor Housing Base Cylinder -->
+    <rect x="420" y="200" width="90" height="180" rx="12" fill="url(#motorBody)"/>
+    <!-- Front Control Panel -->
+    <rect x="430" y="215" width="70" height="140" rx="8" fill="url(#tealPanel)"/>
+    
+    <!-- Digital LED Display -->
+    <rect x="440" y="230" width="50" height="28" rx="4" fill="#0f172a"/>
+    <text x="465" y="249" font-family="monospace" font-size="14" font-weight="bold" fill="#22c55e" text-anchor="middle">14000</text>
+
+    <!-- Speed Adjustment Knob -->
+    <circle cx="465" cy="290" r="14" fill="#334155"/>
+    <circle cx="465" cy="290" r="10" fill="#1e293b"/>
+    <line x1="465" y1="290" x2="465" y2="280" stroke="#22c55e" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Control Switches -->
+    <circle cx="450" cy="330" r="6" fill="#ef4444"/>
+    <circle cx="480" cy="330" r="6" fill="#22c55e"/>
+
+    <!-- FAITHFUL Brand Label -->
+    <text x="465" y="190" font-family="sans-serif" font-size="12" font-weight="900" fill="#0d9488" letter-spacing="2" text-anchor="middle">FAITHFUL</text>
+    <text x="465" y="395" font-family="sans-serif" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">AE500S-H (70G)</text>
+  </g>
+
+  <!-- SS316L Dispersing Shaft Extending Down -->
+  <g filter="url(#shadow)">
+    <rect x="455" y="380" width="8" height="200" fill="url(#steelRod)"/>
+    <rect x="467" y="380" width="8" height="200" fill="url(#steelRod)"/>
+
+    <!-- 70mm Stator/Rotor Work Head at Bottom -->
+    <rect x="445" y="580" width="40" height="45" rx="4" fill="url(#steelRod)"/>
+    
+    <!-- High-Shear Stator Slots -->
+    <line x1="452" y1="590" x2="452" y2="615" stroke="#1e293b" stroke-width="3"/>
+    <line x1="460" y1="590" x2="460" y2="615" stroke="#1e293b" stroke-width="3"/>
+    <line x1="468" y1="590" x2="468" y2="615" stroke="#1e293b" stroke-width="3"/>
+    <line x1="476" y1="590" x2="476" y2="615" stroke="#1e293b" stroke-width="3"/>
+
+    <!-- Bottom Rotor Tip -->
+    <rect x="448" y="625" width="34" height="6" rx="2" fill="#334155"/>
+  </g>
+
+  <!-- Spec Badge -->
+  <g opacity="0.95">
+    <rect x="40" y="40" width="320" height="64" rx="32" fill="#ffffff" filter="url(#shadow)"/>
+    <circle cx="72" cy="72" r="20" fill="#0d9488"/>
+    <path d="M 66 72 L 70 76 L 78 68" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="104" y="66" font-family="sans-serif" font-size="13" font-weight="800" fill="#0f172a">850W HIGH SHEAR DRIVE</text>
+    <text x="104" y="84" font-family="sans-serif" font-size="11" font-weight="600" fill="#64748b">70mm SS316L Stator • 40L Capacity</text>
+  </g>
+</svg>
