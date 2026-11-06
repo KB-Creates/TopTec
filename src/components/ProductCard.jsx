@@ -35,7 +35,6 @@ const ProductCard = ({ product, className = "" }) => {
 
           <div className="mt-auto pt-4 sm:pt-6 border-t border-gray-50 flex items-center justify-between gap-3 sm:gap-4">
             <div className="flex flex-col">
-              <span className="text-[9px] sm:text-[10px] text-gray-400 font-medium uppercase tracking-wider mb-0.5 sm:mb-1">Status</span>
               <div className="flex items-center gap-1 sm:gap-1.5">
                 <div className="w-1.5 h-1.5 rounded-full bg-emerald-500"></div>
                 <span className="text-[10px] sm:text-[11px] font-bold text-[#202124]">Available</span>

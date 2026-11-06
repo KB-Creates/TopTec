@@ -17,7 +17,7 @@ const products = [
     name: 'Deep Pleated HEPA Filter',
     category: 'Air Filters',
     price: 'Request Quote',
-    image: 'https://toptec.pk/wp-content/uploads/2024/07/thumbnail-720-tiny.jpg',
+    image: '/images/hepa-filter.jpg',
     specs: 'H13 / H14 (up to 99.995%)'
   },
   {

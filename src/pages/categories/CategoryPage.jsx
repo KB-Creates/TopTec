@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ChevronRight, ShieldCheck, Zap, Award, Microscope, ArrowRight, Wind, Filter, FlaskConical, Settings, Building2, Layers, MessageSquare, LayoutGrid, Mail } from 'lucide-react';
+import { ShieldCheck, Zap, Award, Microscope, ArrowRight, Wind, Filter, FlaskConical, Settings, Building2, Layers, LayoutGrid, Mail } from 'lucide-react';
 import ProductCard from '../../components/ProductCard';
 
 const relatedCategories = [
@@ -68,26 +68,9 @@ const CategoryPage = ({
         <div className="container mx-auto px-4 sm:px-8 lg:px-16 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="flex flex-col items-start">
-              {/* Premium Breadcrumbs */}
-              <div className="flex flex-wrap items-center gap-2 text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#5f6368] mb-6 sm:mb-12 bg-white/50 backdrop-blur-sm px-4 sm:px-6 py-2 rounded-full border border-gray-100/50 shadow-sm w-fit box-border max-w-full">
-                <Link to="/" className="hover:text-[#4A93C4] transition-colors shrink-0">Home</Link>
-                <ChevronRight size={10} className="text-gray-300 shrink-0" />
-                <span className="text-[#4A93C4] shrink-0">Categories</span>
-                <ChevronRight size={10} className="text-gray-300 shrink-0" />
-                <span className="text-gray-400 truncate max-w-30 sm:max-w-none">{title}</span>
-              </div>
 
               <div className="max-w-xl w-full">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-6 sm:mb-8">
-                  {/* Left-Aligned Icon with Glassmorphism */}
-                  <div 
-                    className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-white flex items-center justify-center text-[#4A93C4] shadow-[0_15px_40px_rgba(74,147,196,0.12)] border border-white relative group overflow-hidden shrink-0"
-                  >
-                    <div className="absolute inset-0 bg-linear-to-br from-[#4A93C4]/10 to-transparent"></div>
-                    {React.cloneElement(icon, { size: 24, className: "relative z-10 sm:hidden" })}
-                    {React.cloneElement(icon, { size: 32, className: "relative z-10 hidden sm:block" })}
-                  </div>
-                  
+                <div className="mb-6 sm:mb-8">
                   <h1 
                     className="text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold text-[#202124] tracking-[-0.04em] leading-[1.1]"
                   >
@@ -99,38 +82,38 @@ const CategoryPage = ({
                   </h1>
                 </div>
                 
-                <p className="text-[#5f6368] text-base sm:text-lg lg:text-xl leading-relaxed mb-8 sm:mb-14 font-light whitespace-pre-line">
+                <p className="text-[#5f6368] text-base sm:text-lg lg:text-xl leading-relaxed mb-6 sm:mb-10 font-light whitespace-pre-line">
                   {description}
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6">
                   <a 
                     href="mailto:caretoptec@gmail.com" 
-                    className="h-14 sm:h-16 px-6 sm:px-10 bg-[#202124] text-white rounded-xl sm:rounded-2xl font-semibold hover:bg-[#4A93C4] transition-all duration-500 shadow-xl shadow-gray-200 hover:shadow-[#4A93C4]/30 active:scale-95 flex items-center justify-center gap-3 group text-sm sm:text-base cursor-pointer"
+                    className="h-8 sm:h-11 px-4 sm:px-6 bg-[#202124] text-white rounded-xl sm:rounded-2xl font-semibold hover:bg-[#4A93C4] transition-all duration-500 shadow-xl shadow-gray-200 hover:shadow-[#4A93C4]/30 active:scale-95 flex items-center justify-center gap-3 group text-sm sm:text-base cursor-pointer"
                   >
                     <Mail size={18} />
                     Request Quotation
                   </a>
-                  <Link to="/contact" className="h-14 sm:h-16 px-6 sm:px-10 bg-white text-[#202124] border border-gray-200 rounded-xl sm:rounded-2xl font-semibold hover:border-[#4A93C4] hover:text-[#4A93C4] transition-all duration-500 active:scale-95 flex items-center justify-center gap-3 text-sm sm:text-base">
-                    <MessageSquare size={18} />
-                    Consult Our Experts
-                  </Link>
                 </div>
               </div>
             </div>
 
             {/* Right Side: Category Image */}
             <div className="relative mt-12 lg:mt-0">
-              <div className="relative z-10 rounded-4xl sm:rounded-[3rem] overflow-hidden shadow-2xl shadow-[#4A93C4]/20 border-4 sm:border-8 border-white">
+              <div className="relative z-10 rounded-4xl sm:rounded-[3rem] overflow-hidden shadow-2xl shadow-[#4A93C4]/20 border-4 sm:border-8 border-white bg-linear-to-b from-[#8ebfed] via-[#c2daf2] to-[#edf3fa] flex items-center justify-center">
                 {image ? (
-                  <img src={image} alt={title} className="w-full h-auto object-cover aspect-4/3" />
+                  <img 
+                    src={image} 
+                    alt={title} 
+                    className={`w-full h-auto ${typeof image === 'string' && image.endsWith('.png') ? 'object-contain p-2 sm:p-4' : 'object-cover'} aspect-4/3`} 
+                  />
                 ) : (
                   <div className="bg-linear-to-br from-gray-50 to-gray-100 aspect-4/3 flex items-center justify-center">
                     {React.cloneElement(icon, { size: 80, className: "text-gray-200/50 sm:hidden" })}
                     {React.cloneElement(icon, { size: 120, className: "text-gray-200/50 hidden sm:block" })}
                   </div>
                 )}
-                <div className="absolute inset-0 bg-linear-to-t from-[#202124]/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-[#202124]/10 to-transparent pointer-events-none"></div>
               </div>
               
               {/* Decorative Elements */}
@@ -149,9 +132,8 @@ const CategoryPage = ({
             <div className="lg:col-span-8 flex flex-col gap-16 md:gap-24">
               <div>
                 <div className="flex items-center justify-between mb-8 sm:mb-12">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-[#202124]">Signature Products</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#202124]">Products</h2>
                   <div className="h-px bg-gray-100 grow mx-4 sm:mx-8 hidden sm:block"></div>
-                  <span className="text-[#4A93C4] font-bold text-xs sm:text-sm tracking-widest uppercase">Inventory</span>
                 </div>
                 
                 {products.length > 0 ? (
@@ -259,8 +241,8 @@ const CategoryPage = ({
                       </div>
                     ))}
                   </div>
-                  <div className="mt-8 sm:mt-12 pt-8 sm:pt-10 border-t border-white/10">
-                    <Link to="/contact" className="w-full h-14 bg-[#4A93C4] text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-[#3b7ba8] transition-all text-sm sm:text-base">
+                  <div className="mt-8 sm:mt-12">
+                    <Link to="/contact" className="w-full h-11 bg-[#4A93C4] text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-[#3b7ba8] transition-all text-sm sm:text-base">
                       Custom Application Quote
                       <ArrowRight size={18} />
                     </Link>
