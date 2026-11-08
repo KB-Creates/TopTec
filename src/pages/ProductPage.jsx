@@ -121,10 +121,10 @@ const ProductPage = () => {
                       key={key} 
                       className={i % 2 === 0 ? "bg-[#F7F7F8]" : "bg-white"}
                     >
-                      <td className="py-3 px-5 text-xs sm:text-sm font-medium text-[#5f6368] w-2/5 border-b border-gray-100/60">
+                      <td className="py-3 px-5 text-xs sm:text-sm font-medium text-[#5f6368] w-2/5 border-b border-gray-100/60 align-top">
                         {key} :
                       </td>
-                      <td className="py-3 px-5 text-xs sm:text-sm font-semibold text-[#202124] border-b border-gray-100/60">
+                      <td className="py-3 px-5 text-xs sm:text-sm font-semibold text-[#202124] border-b border-gray-100/60 whitespace-pre-line">
                         {value}
                       </td>
                     </tr>

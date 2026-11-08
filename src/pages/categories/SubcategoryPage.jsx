@@ -68,51 +68,26 @@ const SubcategoryPage = () => {
 
         <div className="container mx-auto px-4 sm:px-8 lg:px-16 relative z-10">
           <div className="max-w-4xl">
-            {/* Breadcrumbs */}
-            <div className="flex flex-wrap items-center gap-2 text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#5f6368] mb-6 sm:mb-10 bg-white/60 backdrop-blur-sm px-4 sm:px-6 py-2.5 rounded-full border border-gray-100 shadow-xs w-fit box-border max-w-full">
-              <Link to="/" className="hover:text-[#4A93C4] transition-colors shrink-0">Home</Link>
-              <ChevronRight size={10} className="text-gray-300 shrink-0" />
-              <Link to={parentCategorySlug ? `/categories/${parentCategorySlug}` : "/categories/laboratory-equipment"} className="hover:text-[#4A93C4] transition-colors shrink-0">Categories</Link>
-              <ChevronRight size={10} className="text-gray-300 shrink-0" />
-              {parentCategorySlug ? (
-                <Link to={`/categories/${parentCategorySlug}`} className="hover:text-[#4A93C4] transition-colors shrink-0">{parentCategory}</Link>
-              ) : (
-                <span className="text-gray-400 shrink-0">{parentCategory}</span>
-              )}
-              <ChevronRight size={10} className="text-gray-300 shrink-0" />
-              <span className="text-[#4A93C4] truncate max-w-35 sm:max-w-none">{title}</span>
-            </div>
 
             {/* Title & Badge */}
             <div className="flex flex-col gap-4 mb-6 sm:mb-8">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#4A93C4]/10 text-[#4A93C4] text-xs font-bold uppercase tracking-wider w-fit">
-                <Filter size={14} />
-                <span>Specialized Subcategory</span>
-              </div>
-              <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-[#202124] tracking-[-0.03em] leading-[1.15]">
+              <h1 className="text-2xl sm:text-3xl font-bold text-[#202124] tracking-[-0.03em] leading-[1.15]">
                 {title}
               </h1>
             </div>
 
-            <p className="text-[#5f6368] text-base sm:text-lg lg:text-xl leading-relaxed mb-8 sm:mb-12 font-light">
+            <p className="text-[#5f6368] text-base sm:text-lg leading-relaxed mb-8 sm:mb-12 font-light">
               {description}
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <a 
                 href="mailto:caretoptec@gmail.com" 
-                className="h-14 sm:h-16 px-8 bg-[#202124] text-white rounded-xl sm:rounded-2xl font-semibold hover:bg-[#4A93C4] transition-all duration-500 shadow-xl shadow-gray-200 hover:shadow-[#4A93C4]/30 active:scale-95 flex items-center justify-center gap-3 group text-sm sm:text-base cursor-pointer"
+                className="h-8 sm:h-11 px-8 bg-[#202124] text-white rounded-xl sm:rounded-2xl font-semibold hover:bg-[#4A93C4] transition-all duration-500 shadow-xl shadow-gray-200 hover:shadow-[#4A93C4]/30 active:scale-95 flex items-center justify-center gap-3 group text-sm sm:text-base cursor-pointer"
               >
                 <Mail size={18} />
                 Request Specification & Quote
               </a>
-              <Link 
-                to="/contact" 
-                className="h-14 sm:h-16 px-8 bg-white text-[#202124] border border-gray-200 rounded-xl sm:rounded-2xl font-semibold hover:border-[#4A93C4] hover:text-[#4A93C4] transition-all duration-500 active:scale-95 flex items-center justify-center gap-3 text-sm sm:text-base"
-              >
-                <MessageSquare size={18} />
-                Consult Our Technical Team
-              </Link>
             </div>
           </div>
         </div>
@@ -125,40 +100,12 @@ const SubcategoryPage = () => {
             
             {/* Left Column: Products & Nested Subcategories */}
             <div className="lg:col-span-8 flex flex-col gap-14 md:gap-20">
-              
-              {/* Nested Sub-subcategories (if any, e.g. for tablet machines or chromatography) */}
-              {children.length > 0 && (
-                <div>
-                  <div className="flex items-center justify-between mb-8">
-                    <h2 className="text-xl sm:text-2xl font-bold text-[#202124]">Sub-Category Sections</h2>
-                    <div className="h-px bg-gray-100 grow mx-6 hidden sm:block"></div>
-                  </div>
-                  <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
-                    {children.map((child, idx) => (
-                      <Link 
-                        key={idx}
-                        to={child.href}
-                        className="group p-6 bg-gray-50/70 border border-gray-100 rounded-2xl hover:border-[#4A93C4]/30 hover:bg-white transition-all duration-300 hover:shadow-xl hover:shadow-gray-100 flex items-center justify-between"
-                      >
-                        <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-[#4A93C4] shadow-xs group-hover:bg-[#4A93C4] group-hover:text-white transition-colors">
-                            <Layers size={18} />
-                          </div>
-                          <span className="font-bold text-[#202124] text-sm sm:text-base group-hover:text-[#4A93C4] transition-colors">{child.name}</span>
-                        </div>
-                        <ArrowRight size={18} className="text-gray-400 group-hover:text-[#4A93C4] group-hover:translate-x-1 transition-all" />
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
 
               {/* Products Section */}
               <div>
                 <div className="flex items-center justify-between mb-8 sm:mb-12">
                   <h2 className="text-2xl sm:text-3xl font-bold text-[#202124]">Available Products</h2>
                   <div className="h-px bg-gray-100 grow mx-4 sm:mx-8 hidden sm:block"></div>
-                  <span className="text-[#4A93C4] font-bold text-xs sm:text-sm tracking-widest uppercase">{products.length} Items</span>
                 </div>
 
                 {products.length > 0 ? (
@@ -208,28 +155,6 @@ const SubcategoryPage = () => {
                   </div>
                 )}
               </div>
-
-              {/* Sibling Subcategories */}
-              {siblingSubcategories.length > 0 && (
-                <div>
-                  <div className="flex items-center justify-between mb-8">
-                    <h2 className="text-xl sm:text-2xl font-bold text-[#202124]">Related in {parentCategory}</h2>
-                    <div className="h-px bg-gray-100 grow mx-6 hidden sm:block"></div>
-                  </div>
-                  <div className="flex flex-wrap gap-3">
-                    {siblingSubcategories.map((sub, i) => (
-                      <Link 
-                        key={i} 
-                        to={sub.href}
-                        className="px-4 py-2.5 bg-gray-50 border border-gray-100 rounded-full text-xs sm:text-sm font-semibold text-gray-700 hover:bg-[#4A93C4] hover:text-white hover:border-[#4A93C4] transition-all duration-300 shadow-xs"
-                      >
-                        {sub.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-
             </div>
 
             {/* Right Column: Sticky Sidebar Info */}
@@ -259,8 +184,8 @@ const SubcategoryPage = () => {
                     ))}
                   </div>
                   
-                  <div className="mt-8 pt-8 border-t border-white/10">
-                    <Link to="/contact" className="w-full h-12 bg-[#4A93C4] text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-[#3b7ba8] transition-all text-sm">
+                  <div className="mt-8">
+                    <Link to="/contact" className="w-full h-11 bg-[#4A93C4] text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-[#3b7ba8] transition-all text-sm">
                       Get Expert Advice
                       <ArrowRight size={16} />
                     </Link>

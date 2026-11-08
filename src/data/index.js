@@ -31,7 +31,7 @@ export const getProductBySlug = (slug) => {
 export const getProductsBySubcategory = (subcategoryInfo) => {
   if (!subcategoryInfo) return allProducts;
   
-  const { parentCategory, keywords = [] } = subcategoryInfo;
+  const { parentCategory, keywords = [], path = '' } = subcategoryInfo;
   
   // Filter products by parent category first if available
   let categoryProducts = allProducts;
@@ -42,10 +42,26 @@ export const getProductsBySubcategory = (subcategoryInfo) => {
     }
   }
 
+  // 1. If products explicitly match this subcategory by subcategorySlug or subcategory title, prioritize exact matches
+  if (path) {
+    const exactMatches = categoryProducts.filter(p => 
+      p.subcategorySlug === path || 
+      (p.subcategorySlug && path.startsWith(p.subcategorySlug)) ||
+      (p.subcategory && subcategoryInfo.title && p.subcategory.toLowerCase() === subcategoryInfo.title.toLowerCase())
+    );
+    if (exactMatches.length > 0) {
+      return exactMatches;
+    }
+  }
+
   if (keywords.length === 0) return categoryProducts;
 
-  // Filter products that match any of the keywords in name, slug, or features
+  // Filter products that match any of the keywords in name, slug, or features,
+  // excluding products assigned to a different subcategory
   const matchedProducts = categoryProducts.filter(product => {
+    if (path && product.subcategorySlug && product.subcategorySlug !== path && !path.startsWith(product.subcategorySlug)) {
+      return false;
+    }
     const textToSearch = `${product.name} ${product.slug} ${product.description || ''} ${(product.features || []).join(' ')}`.toLowerCase();
     return keywords.some(kw => textToSearch.includes(kw.toLowerCase()));
   });

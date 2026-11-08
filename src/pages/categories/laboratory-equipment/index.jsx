@@ -21,7 +21,7 @@ const LaboratoryEquipment = () => {
 
       We provide flexibility to select the preferred brand and specification according to the client’s application, performance requirements, and budget. With an extensive product range and reliable sourcing network, we deliver accurate, dependable, and application-focused laboratory solutions.`}
       icon={<FlaskConical size={32} />}
-      image="/slider/lab-microscope.jpg"
+      image="/images/laboratory-equipment.png"
       subcategories={subcategories}
       products={laboratoryEquipmentProducts}
     />

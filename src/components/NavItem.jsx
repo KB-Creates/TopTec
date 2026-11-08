@@ -33,9 +33,6 @@ const DropdownItem = ({ item }) => {
             className="absolute left-full top-0 pl-1 w-64 z-50"
           >
             <div className="bg-white rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.15)] border border-gray-100 py-2">
-               <div className="px-4 py-2 border-b border-gray-50 mb-1">
-                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">{item.name}</span>
-              </div>
               {item.subcategories.map((sub, idx) => (
                 <Link
                   key={idx}
@@ -105,9 +102,6 @@ const NavItem = ({ item }) => {
             className="absolute top-full left-0 pt-2 w-64 z-50"
           >
             <div className="bg-white rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.12)] border border-gray-100 py-2">
-              <div className="px-4 py-2 border-b border-gray-50 mb-1">
-                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">{item.name}</span>
-              </div>
               {item.subcategories.map((sub, idx) => (
                 <DropdownItem key={idx} item={sub} />
               ))}

@@ -116,8 +116,8 @@ export const airFiltersProducts = [
     slug: 'pleated-air-filter',
     name: 'Pleated Air Filter',
     category: 'Air Filters',
-    subcategory: 'Activated Carbon Filters',
-    subcategorySlug: '/filters/carbon',
+    subcategory: 'Pre Filters',
+    subcategorySlug: '/filters/pre',
     description: 'The Pleated Air Filter is designed for high-efficiency gas-phase filtration and deodorization. Featuring a rich pore structure with a large specific surface area, it provides exceptional adsorption capacity for harmful gases (such as formaldehyde, toluene, and VOCs) with low airflow resistance and low service cost.',
     image: 'https://toptec.pk/wp-content/uploads/2024/07/201909060948298944.jpg',
     features: [
@@ -187,9 +187,9 @@ export const airFiltersProducts = [
     slug: 'washed-pre-filter',
     name: 'Washed Pre Filter',
     category: 'Air Filters',
-    subcategory: 'Washable / Reusable Filters',
+    subcategory: 'Washable Filters',
     subcategorySlug: '/filters/washable',
-    description: 'The Washed Pre Filter (Extended Surface Washable Pre Filter) is a high-performance washable and reusable pre-filter engineered for air conditioning, industrial workshops, and large-scale air compressor intake systems. Designed to protect secondary HEPA filters from heavy dust accumulation, its durable metal frame allows media replacement while the media itself can be washed 1-2 times.',
+    description: 'The Washed Pre Filter (Extended Surface Washable Pre Filter) is a high-performance washable and reusable pre-filter engineered for air conditioning, industrial workshops, and large-scale air compressor intake systems. Designed to protect secondary filtration systems from heavy dust accumulation, its durable metal frame allows media replacement while the media itself can be washed 1-2 times.',
     image: '/images/washed-pre-filter.jpg',
     features: [
       'Reused after cleaning by water',
@@ -254,6 +254,114 @@ export const airFiltersProducts = [
         ['TTVB-007', '287*592*292', '1650', '9.16', '2.70', '8'],
         ['TTVB-008', '490*592*292', '2650', '16.26', '2.68', '8'],
         ['TTVB-009', '592*592*292', '3400', '19.83', '2.69', '8'],
+      ]
+    }
+  },
+  {
+    slug: 'hepa-housing-box',
+    name: 'HEPA Housing Box',
+    category: 'Air Filters',
+    subcategory: 'Terminal HEPA Box',
+    subcategorySlug: '/filters/terminal-hepa',
+    description: "HEPA filter housing boxes are critical components in creating sterile environments by providing secure enclosures for HEPA filters. These boxes ensure that filters perform efficiently and maintain the highest levels of air purity. We specialize in designing and manufacturing top-quality HEPA filter housings that meet the demanding specifications of various industries requiring ultra-clean air.",
+    image: '/images/hepa-housing-box.png',
+    features: [
+      "Critical components in creating sterile environments by providing secure enclosures for HEPA filters.",
+      "Ensures that filters perform efficiently and maintain the highest levels of air purity.",
+      "Designed and manufactured with top-quality materials to meet demanding ultra-clean room specifications.",
+      "Airtight casing and precision leak-free clamping mechanism prevent bypass leakage.",
+      "Integrated perforated diffusion plate ensures uniform, non-turbulent laminar air distribution.",
+      "Equipped with test ports for DOP/PAO aerosol challenge and differential pressure monitoring."
+    ],
+    specs: {
+      'Product Name': 'HEPA Housing Box (Terminal Ceiling Module)',
+      'Category': 'Air Filters / Terminal Filtration',
+      'Housing Material': 'Cold-rolled steel powder coated / Stainless Steel SUS 304 / 316L',
+      'Compatible Filters': 'Standard & Mini-Pleat HEPA / Sub-HEPA / ULPA Filters',
+      'Diffuser Face': 'Perforated screen / Swirl diffuser plate',
+      'Sealing Type': 'Mechanical clamp / Gel seal / Endless PU gasket',
+      'Inlet Connection': 'Top or side circular / rectangular duct collar with damper option',
+      'Test Ports': 'Upstream aerosol injection port and static pressure test port',
+      'Applications': 'Pharmaceutical Cleanrooms, Sterile Operating Theaters, Semiconductor Labs, Isolation Wards'
+    }
+  },
+  {
+    slug: 'hvac-activated-carbon-pocket-filter',
+    name: 'HVAC Activated Carbon Pocket Filter',
+    category: 'Air Filters',
+    subcategory: 'Carbon/Activated Carbon Filters',
+    subcategorySlug: '/filters/carbon',
+    description: 'Combine the advantages of bag filter and activated carbon to increase the filtration area while effectively removing particulate matter and harmful gases in the air.',
+    image: '/images/hvac-activated-carbon-pocket-filter.png',
+    // features: [
+    //   'Combine the advantages of bag filter and activated carbon to increase the filtration area while effectively removing particulate matter and harmful gases in the air.',
+    //   'High-grade activated carbon filter media for effective adsorption of odors, VOCs, and gaseous contaminants.',
+    //   'Multi-pocket bag structure provides expanded surface area with high dust and gas holding capacity.',
+    //   'Sturdy frame with precision sewing bag pocket type construction.',
+    //   'G4 efficiency rating for simultaneous coarse particulate filtration and air purification.'
+    // ],
+    specs: {
+      'Item NO.': 'TTC-700',
+      'Optional Thickness': '21~46 mm',
+      'Media': 'Activated carbon filter',
+      'Efficiency': 'G4',
+      'Pocket type': 'Sewing bag',
+      'Max Temperature': '50°C',
+      'Max Humidity': '100%'
+    },
+    technicalTable: {
+      headers: ['Model NO.', 'Actual Size HxWxD (mm)', 'Air Flow (m³/h)', 'Media Area Flow (m²)', 'Velocity (m/s)', 'Pocket Numbers'],
+      rows: [
+        ['TTC-001', '287*592*381', '1450', '1.58', '2.37', '3'],
+        ['TTC-002', '592*592*381', '2850', '3.18', '2.26', '6'],
+        ['TTC-003', '287*592*381', '1850', '2.04', '3.02', '4'],
+        ['TTC-004', '592*592*381', '3700', '4.09', '2.93', '8'],
+        ['TTC-005', '287*592*500', '1850', '2.08', '3.02', '3'],
+        ['TTC-006', '592*592*500', '3750', '4.17', '2.97', '6'],
+        ['TTC-009', '287*592*500', '2250', '2.49', '3.68', '3'],
+        ['TTC-010', '592*592*600', '4500', '5.01', '3.57', '6'],
+        ['TTC-011', '287*592*600', '2900', '3.21', '4.74', '4'],
+        ['TTC-012', '592*592*600', '5800', '6.44', '4.60', '8'],
+      ]
+    }
+  },
+  {
+    slug: 'hvac-activated-carbon-pocket-filter',
+    name: 'HVAC Activated Carbon Pocket Filter',
+    category: 'Air Filters',
+    subcategory: 'Carbon/Activated Carbon Filters',
+    subcategorySlug: '/filters/carbon',
+    description: 'Combine the advantages of bag filter and activated carbon to increase the filtration area while effectively removing particulate matter and harmful gases in the air.',
+    image: '/images/hvac-activated-carbon-pocket-filter.png',
+    features: [
+      'Combine the advantages of bag filter and activated carbon to increase the filtration area while effectively removing particulate matter and harmful gases in the air.',
+      'High-grade activated carbon filter media for effective adsorption of odors, VOCs, and gaseous contaminants.',
+      'Multi-pocket bag structure provides expanded surface area with high dust and gas holding capacity.',
+      'Sturdy frame with precision sewing bag pocket type construction.',
+      'G4 efficiency rating for simultaneous coarse particulate filtration and air purification.'
+    ],
+    specs: {
+      'Item NO.': 'KLC-KP7-C',
+      'Optional Thickness': '21~46 mm',
+      'Media': 'Activated carbon filter',
+      'Efficiency': 'G4',
+      'Pocket type': 'Sewing bag',
+      'Max Temperature': '50°C',
+      'Max Humidity': '100%'
+    },
+    technicalTable: {
+      headers: ['Model NO.', 'Actual Size HxWxD (mm)', 'Air Flow (m³/h)', 'Media Area Flow (m²)', 'Velocity (m/s)', 'Pocket Numbers'],
+      rows: [
+        ['KP7-C-001', '287*592*381', '1450', '1.58', '2.37', '3'],
+        ['KP7-C-002', '592*592*381', '2850', '3.18', '2.26', '6'],
+        ['KP7-C-003', '287*592*381', '1850', '2.04', '3.02', '4'],
+        ['KP7-C-004', '592*592*381', '3700', '4.09', '2.93', '8'],
+        ['KP7-C-005', '287*592*500', '1850', '2.08', '3.02', '3'],
+        ['KP7-C-006', '592*592*500', '3750', '4.17', '2.97', '6'],
+        ['KP7-C-009', '287*592*500', '2250', '2.49', '3.68', '3'],
+        ['KP7-C-010', '592*592*600', '4500', '5.01', '3.57', '6'],
+        ['KP7-C-011', '287*592*600', '2900', '3.21', '4.74', '4'],
+        ['KP7-C-012', '592*592*600', '5800', '6.44', '4.60', '8'],
       ]
     }
   }

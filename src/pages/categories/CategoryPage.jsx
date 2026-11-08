@@ -1,18 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Zap, Award, Microscope, ArrowRight, Wind, Filter, FlaskConical, Settings, Building2, Layers, LayoutGrid, Mail } from 'lucide-react';
+import { ShieldCheck, Zap, Microscope, ArrowRight, Building2, LayoutGrid, Mail } from 'lucide-react';
 import ProductCard from '../../components/ProductCard';
-
-const relatedCategories = [
-  { title: 'Air Filters', icon: <Filter size={20} />, slug: 'air-filters' },
-  { title: 'Air Cleaning', icon: <Wind size={20} />, slug: 'air-cleaning' },
-  { title: 'Laboratory Furniture', icon: <Building2 size={20} />, slug: 'laboratory-furniture' },
-  { title: 'Production Machinery', icon: <Settings size={20} />, slug: 'production-machinery' },
-  { title: 'Laboratory Equipment', icon: <FlaskConical size={20} />, slug: 'laboratory-equipment' },
-  { title: 'Clean Room', icon: <Layers size={20} />, slug: 'sterile-processing' },
-  { title: 'HVAC Systems', icon: <Zap size={20} />, slug: 'hvac-systems' },
-];
 
 const CategoryPage = ({ 
   title, 
@@ -176,44 +166,6 @@ const CategoryPage = ({
                   </div>
                 )}
               </div>
-
-              <div>
-                <div className="flex items-center justify-between mb-8 sm:mb-12">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-[#202124]">Sub-Categories</h2>
-                  <div className="h-px bg-gray-100 grow mx-4 sm:mx-8 hidden sm:block"></div>
-                </div>
-                <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
-                  {subcategories.length > 0 ? (
-                    subcategories.map((sub, i) => (
-                      <Link 
-                        key={i} 
-                        to={sub.href}
-                        className="group p-8 sm:p-10 bg-white border border-gray-100 rounded-4xl sm:rounded-[2.5rem] hover:border-[#4A93C4]/30 transition-all duration-500 hover:shadow-2xl hover:shadow-gray-100 relative overflow-hidden flex flex-col items-start"
-                      >
-                        <div className="absolute top-0 right-0 w-24 h-24 bg-[#4A93C4]/5 rounded-bl-full translate-x-8 -translate-y-8 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700"></div>
-                        <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gray-50 rounded-xl sm:rounded-2xl mb-6 sm:mb-8 flex items-center justify-center text-[#4A93C4] group-hover:bg-[#4A93C4] group-hover:text-white transition-all">
-                          <ArrowRight size={24} className="group-hover:-rotate-45deg transition-transform" />
-                        </div>
-                        <h3 className="text-lg sm:text-xl font-bold text-[#202124] mb-2 sm:mb-3 group-hover:text-[#4A93C4] transition-colors">{sub.name}</h3>
-                        <p className="text-gray-500 text-sm leading-relaxed">
-                          Professional grade {sub.name.toLowerCase()} solutions for pharmaceutical standards.
-                        </p>
-                      </Link>
-                    ))
-                  ) : (
-                    [1, 2].map((i) => (
-                      <div key={i} className="group p-8 sm:p-10 bg-white border border-gray-100 rounded-4xl sm:rounded-[2.5rem] animate-pulse relative overflow-hidden">
-                        <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gray-50 rounded-xl sm:rounded-2xl mb-6 sm:mb-8"></div>
-                        <div className="h-6 sm:h-7 bg-gray-50 rounded-lg w-3/4 mb-4"></div>
-                        <div className="space-y-3">
-                          <div className="h-4 bg-gray-50 rounded-lg w-full"></div>
-                          <div className="h-4 bg-gray-50 rounded-lg w-5/6"></div>
-                        </div>
-                      </div>
-                    ))
-                  )}
-                </div>
-              </div>
             </div>
 
             {/* Right Column: Sticky Sidebar Info */}
@@ -246,30 +198,6 @@ const CategoryPage = ({
                       Custom Application Quote
                       <ArrowRight size={18} />
                     </Link>
-                  </div>
-                </div>
-
-                {/* Explore Grid in Sidebar */}
-                <div className="px-2 sm:px-4">
-                  <h3 className="text-xl font-bold text-[#202124] mb-6 sm:mb-8">Related Expertise</h3>
-                  <div className="grid grid-cols-2 gap-3 sm:gap-4">
-                    {relatedCategories
-                      .filter(cat => cat.title !== title)
-                      .slice(0, 4)
-                      .map((cat, idx) => (
-                        <Link 
-                          key={idx}
-                          to={`/categories/${cat.slug}`}
-                          className="p-4 sm:p-6 bg-gray-50 rounded-2xl sm:rounded-3xl flex flex-col items-center gap-2 sm:gap-3 hover:bg-white hover:shadow-xl hover:shadow-gray-200/50 transition-all border border-transparent hover:border-gray-100 group"
-                        >
-                          <div className="text-gray-400 group-hover:text-[#4A93C4] transition-colors group-hover:scale-110 duration-500">
-                             {React.cloneElement(cat.icon, { size: 18, className: "sm:hidden" })}
-                             {React.cloneElement(cat.icon, { size: 20, className: "hidden sm:block" })}
-                          </div>
-                          <span className="text-[9px] sm:text-[11px] font-bold text-gray-500 uppercase tracking-tighter text-center">{cat.title}</span>
-                        </Link>
-                      ))
-                    }
                   </div>
                 </div>
               </div>

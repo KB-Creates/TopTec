@@ -106,9 +106,7 @@ const Navbar = () => {
         { name: 'Carbon/Activated Carbon Filters', href: '/filters/carbon' },
         { name: 'Bag Filters', href: '/filters/bag' },
         { name: 'V-Bank Filters', href: '/filters/v-bank' },
-        { name: 'Box/Panel Filters', href: '/filters/box-panel' },
-        { name: 'Compact Filters', href: '/filters/compact' },
-        { name: 'Washable / Reusable Filters', href: '/filters/washable' },
+        { name: 'Washable Filters', href: '/filters/washable' },
         { name: 'Terminal Hepa Box', href: '/filters/terminal-hepa' },
       ]
     },
@@ -117,7 +115,7 @@ const Navbar = () => {
       href: '/categories/air-cleaning',
       subcategories: [
         { name: 'Laminar Air Flow Hoods', href: '/air/laminar-flow' },
-        { name: 'Biosafety Cabinets', href: '/air/biosafety-cabinets' },
+        { name: 'BiologicalSafety Cabinets', href: '/air/biosafety-cabinets' },
         { name: 'Fume Hoods / Fume Extraction', href: '/air/fume-hoods' },
         { name: 'Air Purifiers', href: '/air/purifiers' },
         { name: 'Pass Boxes', href: '/air/pass-boxes' },
@@ -142,7 +140,7 @@ const Navbar = () => {
         { name: 'Chemical / Safety Cabinets', href: '/furniture/safety-cabinets' },
         { name: 'Workstations & Tables', href: '/furniture/workstations' },
         { name: 'I-Shape Laboratory Tables', href: '/furniture/i-shape-tables' },
-        { name: 'L-Shape Laboratory Tables', href: '/furniture/l-shape-tables' },
+        { name: 'L-Shape Corner Lab Tables', href: '/furniture/l-shape-tables' },
         { name: 'Continues / Modular Lab Benches', href: '/furniture/modular-benches' },
         { name: 'Central / Island Work Tables', href: '/furniture/island-tables' },
         { name: 'Designing / Drafting Tables', href: '/furniture/drafting-tables' },
@@ -254,7 +252,7 @@ const Navbar = () => {
           name: 'Chromatography Equipment',
           href: '/science/chromatography',
           subcategories: [
-            { name: 'Hplc', href: '/science/chromatography/hplc' },
+            { name: 'HPLC', href: '/science/chromatography/hplc' },
             { name: 'Uv Spectrophotometer', href: '/science/chromatography/uv' },
             { name: 'Atomic Absorption (Aas)', href: '/science/chromatography/aas' },
             { name: 'Liquid Particle Counter', href: '/science/chromatography/particle-counter' },

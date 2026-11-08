@@ -30,9 +30,6 @@ const AnnouncementBar = ({ isScrolled }) => {
           >
             {[1, 2, 3].map((_, i) => (
               <div key={i} className="flex items-center gap-3">
-                <span className="px-2 py-0.5 bg-[#4A93C4] text-white text-[8px] font-black rounded uppercase tracking-widest">
-                  Global Presence
-                </span>
                 <span className="text-[11px] font-medium text-white/90">
                   Serving pharmaceutical facilities in 14+ countries including UAE, Saudi Arabia, Qatar, Kenya, and Nigeria.
                 </span>
@@ -43,14 +40,11 @@ const AnnouncementBar = ({ isScrolled }) => {
 
         {/* Desktop Static (hidden on mobile) */}
         <div className="hidden sm:flex items-center justify-center gap-4 text-center">
-          <span className="shrink-0 px-2.5 py-1 bg-[#4A93C4] text-white text-[9px] font-black rounded-lg uppercase tracking-widest shadow-xl">
-            Global Presence
-          </span>
           <span className="text-[13px] font-medium text-white/90 leading-snug">
             Serving pharmaceutical facilities in 14+ countries including UAE, Saudi Arabia, Qatar, Kenya, and Nigeria.
-            <button className="text-[#4A93C4] hover:text-white transition-colors font-bold ml-2 underline underline-offset-4 decoration-[#4A93C4]/30 hover:decoration-[#4A93C4]">
+            {/* <button className="text-[#4A93C4] hover:text-white transition-colors font-bold ml-2 underline underline-offset-4 decoration-[#4A93C4]/30 hover:decoration-[#4A93C4]">
               View projects
-            </button>
+            </button> */}
           </span>
         </div>
       </div>

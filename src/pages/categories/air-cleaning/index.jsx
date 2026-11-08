@@ -7,7 +7,7 @@ import { airCleaningProducts } from '../../../data/air-cleaning';
 const AirCleaning = () => {
   const subcategories = [
     { name: 'Laminar Air Flow Hoods', href: '/air/laminar-flow' },
-    { name: 'Biosafety Cabinets', href: '/air/biosafety-cabinets' },
+    { name: 'BiologicalSafety Cabinets', href: '/air/biosafety-cabinets' },
     { name: 'Fume Hoods / Fume Extraction', href: '/air/fume-hoods' },
     { name: 'Air Purifiers', href: '/air/purifiers' },
     { name: 'Pass Boxes', href: '/air/pass-boxes' },
@@ -27,7 +27,7 @@ const AirCleaning = () => {
 
       With a strong focus on quality, precision, and reliability, we provide solutions that deliver consistent performance and long-term value. From individual equipment to complete cleanroom setups, our commitment is to provide dependable, high-performance equipment that supports modern pharmaceutical and cleanroom standards.`}
       icon={<Wind size={32} />}
-      image="https://toptec.pk/wp-content/uploads/2024/04/Air-Shower-Image-768x768.png"
+      image="/images/air-cleaning.jpg"
       subcategories={subcategories}
       products={airCleaningProducts}
     />
