@@ -119,7 +119,7 @@ export const subcategoriesRegistry = {
     parentCategory: 'Air Cleaning',
     parentCategorySlug: 'air-cleaning',
     description: 'Maintain strict air pressure balance and sterile cleanroom boundaries with our high-grade pharma doors. Built with flush-mounted stainless steel or powder-coated galvanized panels, these airtight doors prevent dust accumulation and stand up to rigorous daily chemical washdowns. They feature seamless silicone drop-down gaskets, heavy-duty self-closing hinges, double-glazed flush view panels, and optional electronic interlocking systems for effortless access control. Engineered for durability, thermal insulation, and reliable noise reduction, our doors ensure full cGMP and ISO cleanroom compliance across pharmaceutical plants, research laboratories, and medical cleanrooms.',
-    keywords: ['door', 'steel door', 'pharma door', 'cleanroom door'],
+    keywords: ['door', 'steel door', 'pharma door', 'cleanroom door', 'executive cabinet', 'executive-cabinet', 'employee locker', 'employee-locker', 'cleanroom lockers', 'cleanroom-lockers', 'clean wardrobe', 'clean-wardrobe'],
   },
   '/air/windows': {
     title: 'Pharma Windows',

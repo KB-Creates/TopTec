@@ -32,58 +32,51 @@ export const airCleaningProducts = [
     slug: 'clean-room-stainless-steel-door',
     name: 'Clean Room Stainless Steel Door',
     category: 'Air Cleaning Equipments',
-    description: `Mild-Steel doors are widely used in clean rooms of pharmaceuticals, food, cosmetics and electronics manufacturing industries.
-Fireproof, durable, beautiful appearance, neat, flush with wall panels, easy to clean, good tightness.
-
-Within pharmaceutical applications, cleanrooms and laboratories, the requirements for cleanability and standards of hygiene are extremely high. TOPTEC pharmaceutical doors are the ultimate solution for cleanrooms due to their smooth, seamless, ledge free surfaces.
-
-Our GMP pharmaceutical doors are completely heat resistant and designed to withstand areas with high humidity and extreme temperatures. We can supply doors with automations, interlocking and access control systems. Our PU doors are also easily integrated into most cleanroom wall systems.
-
-TOPTEC pharmaceutical doors play an essential role in preventing cross-contamination as well as maintaining correct room pressures, air circulation rates and ensuring optimum operating efficiency.`,
+    description: `This cleanroom stainless steel door is engineered for controlled environments that require strict hygiene, airtight sealing, and frequent chemical washdowns. Designed to prevent particulate accumulation and maintain room pressure balance, it provides an airtight barrier for pharmaceutical suites, laboratories, medical facilities, and clean industrial areas.`,
     image: 'https://toptec.pk/wp-content/uploads/2024/04/CLEAN-ROOM-STAINLESS-STEEL-DOOR.png',
-    features: [
-      'Fireproof and durable construction',
-      'Smooth, seamless, ledge-free surfaces',
-      'Completely heat resistant',
-      'Void-free and non-porous construction',
-      'Resistant to chlorinated water and steam',
-      'Will not swell, rot, rust or warp'
-    ],
-    specs: {
-      'Material': 'Stainless Steel / Mild Steel',
-      'Compliance': 'GMP Standards',
-      'Surface': 'Seamless & Ledge-free',
-      'Integration': 'Flush with Wall Panels',
-      'Options': 'Interlocking & Access Control'
+    technicalTable: {
+      headers: ['Parameter / Feature', 'Specification'],
+      rows: [
+        ['Product Type', 'Single-leaf cleanroom stainless steel swing door'],
+        ['Standard Dimensions (W × H)', '900 mm × 2100 mm / 1000 mm × 2100 mm (Custom sizes available)'],
+        ['Door Leaf Thickness', '50 mm (Standard cleanroom wall flush fit)'],
+        ['Door Leaf Material', '1.0 mm – 1.2 mm SS 304 / SS 316 stainless steel sheet'],
+        ['Door Frame Material', '1.2 mm – 1.5 mm SS 304 / SS 316 stainless steel frame with wall trim'],
+        ['Internal Infill (Core)', 'High-density paper honeycomb, aluminum honeycomb, or rock wool core'],
+        ['View Window (Vision Panel)', 'Double-glazed transparent tempered glass (flush-mounted, sealed with black border)'],
+        ['Window Dimensions', '400 mm × 600 mm (or customized to layout)'],
+        ['Perimeter Sealing', 'Food-grade EPDM / Silicone rubber airtight gasket (3-sided frame seal + automatic drop seal)'],
+        ['Door Handle', 'Heavy-duty stainless steel tubular D-handle (pull handle)'],
+        ['Hinges', 'Heavy-duty stainless steel cleanroom lift-off / flag hinges'],
+        ['Surface Finish', 'Smooth satin hairline brushed finish'],
+        ['Lock / Latch Option', 'Cleanroom mortise lock with lever handle or electromagnetic interlock integration'],
+        ['Compliance Standard', 'ISO Class 5 to Class 8, cGMP, and FDA compliant environments']
+      ]
     }
   },
   {
     slug: 'clean-room-mild-steel-door',
     name: 'Clean Room Mild-Steel Door',
     category: 'Air Cleaning Equipments',
-    description: `Mild-Steel doors are widely used in clean rooms of pharmaceuticals, food, cosmetics and electronics manufacturing industries.
-Fireproof, durable, beautiful appearance, neat, flush with wall panels, easy to clean, good tightness.
-
-Within pharmaceutical applications, cleanrooms and laboratories, the requirements for cleanability and standards of hygiene are extremely high. TOPTEC pharmaceutical doors are the ultimate solution for cleanrooms due to their smooth, seamless, ledge free surfaces.
-
-Our GMP pharmaceutical doors are completely heat resistant and designed to withstand areas with high humidity and extreme temperatures. We can supply doors with automations, interlocking and access control systems. Our PU doors are also easily integrated into most cleanroom wall systems.
-
-TOPTEC pharmaceutical doors play an essential role in preventing cross-contamination as well as maintaining correct room pressures, air circulation rates and ensuring optimum operating efficiency.`,
+    description: `This cleanroom mild-steel door provides an airtight, cost-effective, and durable partition solution for controlled environments. Built with a smooth, flush exterior to prevent particulate accumulation, it helps maintain strict pressure differentials across clean production suites, packaging areas, and laboratories.`,
     image: 'https://toptec.pk/wp-content/uploads/2024/04/CLEAN-ROOM-STEEL-DOOR.png',
-    features: [
-      'Industrial grade mild-steel construction',
-      'GMP compliant seamless finishes',
-      'High fire and heat resistance',
-      'Moisture and chemical resistant',
-      'Flush mount with cleanroom panels',
-      'No bacterial harbouring design'
-    ],
-    specs: {
-      'Material': 'High-Grade Mild Steel',
-      'Compliance': 'GMP / ISO Cleanroom',
-      'Mounting': 'Flush with Wall Panels',
-      'Features': 'Interlocking & Access Control',
-      'Durability': 'Anti-rust and Anti-warp'
+    technicalTable: {
+      headers: ['Parameter / Feature', 'Specification'],
+      rows: [
+        ['Product Type', 'Single-leaf cleanroom swing door'],
+        ['Standard Dimensions (W × H)', 'Custom sizes available'],
+        ['Door Leaf Thickness', '50 mm (Matches standard 50mm cleanroom wall panels)'],
+        ['Door Leaf Material', '0.8 mm – 1.0 mm high-quality cold-rolled mild steel sheet'],
+        ['Door Frame Material', '1.2 mm – 1.5 mm mild steel frame with clip-in wall trim'],
+        ['Surface Coating', 'Electrostatic epoxy powder coating (Standard Blue / RAL colors available)'],
+        ['Internal Core Material', 'High-density paper honeycomb (Optional: Aluminum honeycomb or Rock wool)'],
+        ['Vision Panel (View Window)', 'Double-glazed transparent tempered glass with flush perimeter seal'],
+        ['Window Dimensions', '400 mm × 600 mm'],
+        ['Perimeter Sealing', 'Three-sided EPDM/silicone rubber gasket + automatic drop-down bottom sweep'],
+        ['Lock & Hardware', 'Cleanroom mortise lock with exterior cylinder, keys, and compact turn knob'],
+        ['Hinges', 'Heavy-duty stainless steel cleanroom hinges (concealed or flag type)'],
+        ['Compliance Standard', 'ISO Class 7 to Class 8, GMP, and clean workshop standards']
+      ]
     }
   },
   {
@@ -180,24 +173,32 @@ TOPTEC pharmaceutical doors play an essential role in preventing cross-contamina
     slug: 'clean-wardrobe',
     name: 'Clean Wardrobe',
     category: 'Air Cleaning Equipments',
-    description: 'Clean wardrobe, also known as dust-free wardrobe, is a specialized storage solution for cleanroom garments used in medicine, electronics, and precision instrumentation. It ensures that sterilized clothes are stored and transmitted without pollution by ambient air, maintaining garment integrity for sterile environments.',
+    description: 'This cleanroom garment storage wardrobe is designed to store cleanroom coveralls, lab coats, and protective apparel under a continuous, sterile laminar airflow. By maintaining an ISO Class 5 positive pressure environment inside the cabinet, it prevents airborne dust, particulate accumulation, and microbial contamination on garments between gowning cycles.',
     image: 'https://toptec.pk/wp-content/uploads/2024/04/CLEAN-WARDROBE.png',
     features: [
-      'High-efficiency HEPA filtration system',
-      'Stainless steel 304/316L high-grade construction',
-      'Transparent tempered glass sliding/swing doors',
-      'UV sterilization lamp for germicidal protection',
-      'Heavy-duty casters for easy mobility',
-      'Adjustable internal hanging rails',
-      'Differential pressure gauge for filter monitoring'
+      'Framed sliding tempered glass doors with transparent side panels'
     ],
-    specs: {
-      'Filtration': 'HEPA Filter (99.99%)',
-      'Material': 'Stainless Steel 304 / 316L',
-      'Air Flow': 'Vertical Laminar Flow',
-      'Lighting': 'UV & LED Integrated',
-      'Mobility': 'Industrial Grade Casters',
-      'Control': 'Electronic Control Panel'
+    technicalTable: {
+      headers: ['Parameter / Feature', 'Specification'],
+      rows: [
+        ['Product Type', 'Vertical laminar flow garment storage wardrobe'],
+        ['Standard Dimensions (W × D × H)', '1200 mm × 600 mm × 1950 mm (Custom sizes available)'],
+        ['Material Construction', 'Full SS 304 / SS 316 stainless steel with coved hygienic interior'],
+        ['Door Type', 'Framed sliding tempered glass doors with transparent side panels'],
+        ['Hanging Capacity', 'Heavy-duty SS hanging rod accommodating 10 to 15 garments (cleanroom suits/gowns)'],
+        ['Airflow Pattern', 'Vertical laminar downflow (positive pressure)'],
+        ['Air Velocity', '0.35 – 0.50 m/s (Uniform face velocity)'],
+        ['Filtration Stages', 'Pre-Filter: G4 washable synthetic pre-filter | Main Filter: H14 Mini-Pleat HEPA Filter (99.99% efficiency @ 0.3 µm)'],
+        ['DOP Testing / DOP Port', 'Upstream PAO/DOP aerosol test port with sealed cap for HEPA integrity validation'],
+        ['Pressure Monitoring', 'Top-mounted Minihelic Differential Pressure Gauge (0–500 Pa) for HEPA filter monitoring'],
+        ['Blower & Motor', 'Direct-drive, low-noise backward-curved centrifugal blower unit'],
+        ['Disinfection', '20W / 30W UV-C germicidal lamp (254 nm) with automatic door shut-off interlock'],
+        ['Interior Lighting', 'Cleanroom LED light strip (> 300 Lux)'],
+        ['Control System', 'Digital control panel for fan speed, lighting, and UV lamp timing'],
+        ['Bottom Base', 'Perforated stainless steel air return floor with lower pull-out maintenance tray'],
+        ['Mobility', '4× Heavy-duty universal swivel casters with foot brakes'],
+        ['Power Supply', 'Single-Phase 220V / 50Hz']
+      ]
     }
   },
   {
@@ -227,72 +228,82 @@ TOPTEC pharmaceutical doors play an essential role in preventing cross-contamina
     slug: 'cleanroom-lockers',
     name: 'Cleanroom Lockers',
     category: 'Air Cleaning Equipments',
-    description: 'Cleanroom Lockers are specifically designed for storing personal items and clothing in sterile environments. These lockers feature a smooth, easy-to-clean design that minimizes dust accumulation and supports strict hygiene protocols in pharmaceutical, medical, and laboratory facilities.',
-    image: 'https://toptec.pk/wp-content/uploads/2024/04/WhatsApp_Image_2024-11-18_at_14.59.28_db647b7e-removebg-preview.png',
+    description: 'This multi-tier cleanroom locker cabinet is designed for gowning zones, change rooms, and personnel entry airlocks to provide organized, hygienic, and secure personal storage. Engineered with smooth surfaces to prevent dust retention and allow easy wipe-down sanitation, it ensures operators can safely store shoes, mobile phones, cleanroom apparel, and personal belongings prior to entering sterile working areas.',
+    image: '/images/cleanroom-lockers.png',
     features: [
-      'Customizable dimensions and compartment counts',
-      'Available in High-Grade Stainless Steel or Mild Steel',
-      'Sloping top design to prevent dust accumulation (optional)',
-      'Secure locking mechanisms (Key/Digital/Mechanical)',
-      'Ventilated doors for airflow',
-      'Seamless, ledge-free interior for easy sanitization',
-      'Heavy-duty industrial construction'
+      'Reinforced sheet metal doors with dual stamped louvered vents'
     ],
-    specs: {
-      'Material Options': 'SS 304 / SS 316 / Mild Steel',
-      'Dimensions': 'Fully Customized as per requirement',
-      'Finish': 'Satin Polish / Epoxy Powder Coated',
-      'Lock Type': 'Multiple security options available',
-      'Grade': 'Pharmaceutical / Laboratory Grade',
-      'Sanitation': 'Washable & Chemical Resistant'
+    technicalTable: {
+      headers: ['Parameter / Feature', 'Standard Specification'],
+      rows: [
+        ['Product Type', 'Multi-compartment cleanroom personnel storage locker cabinet'],
+        ['Total Compartments', '20 Lockers (4 Columns × 5 Tiers)'],
+        ['Overall Dimensions (W × D × H)', 'Custom sizes available'],
+        ['Compartment Dimensions (W × D × H)', '~280 mm × 430 mm × 320 mm per locker'],
+        ['Material Construction', 'Heavy-gauge cold-rolled mild steel sheet (Optional: Full SS 304 / SS 316)'],
+        ['Surface Finish', 'Anti-microbial electrostatic epoxy powder coating (Dual-tone: White frame with Grey doors)'],
+        ['Door Thickness', '0.8 mm – 1.0 mm reinforced sheet metal'],
+        ['Ventilation', 'Dual stamped louvered air vents on each door'],
+        ['Locking Mechanism', 'Individual cylinder cam lock with 2 keys per door (Master key option available)'],
+        ['Handles & Hardware', 'Chrome-plated / Stainless steel vertical pull handles'],
+        ['Identification', 'Metal index name/number card holder on every door'],
+        ['Base Support', 'Flat base with concealed leveling studs or optional raised legs for easy floor mop clearance'],
+        ['Top Design', 'Flat top (Optional: 30° / 45° sloping sanitary top to prevent dust accumulation)'],
+        ['Compliance Standard', 'ISO Class 7 to Class 8 change rooms, cGMP gowning room standards']
+      ]
     }
   },
   {
     slug: 'employee-locker',
     name: 'Employee Locker',
     category: 'Air Cleaning Equipments',
-    description: 'Industrial-grade employee lockers designed for secure storage in changing rooms and transition zones. These lockers are engineered for durability and hygiene, featuring ventilated doors and robust construction to meet the demands of pharmaceutical and manufacturing facilities.',
+    description: 'Designed for staff rooms, industrial changing areas, gyms, and corporate offices, this heavy-duty steel employee locker provides secure, organized personal storage for personnel. Its durable modular layout maximizes vertical storage space while keeping personal belongings, uniforms, shoes, and bags safe and dust-free.',
     image: 'https://toptec.pk/wp-content/uploads/2024/12/EmployeeLocker-768x768.webp',
     features: [
-      'Heavy-duty cold-rolled steel construction',
-      'Ventilated door design for optimal airflow',
-      'Multiple tier configurations (1-Tier to 5-Tier)',
-      'Secure recessed handle for safety and aesthetics',
-      'Scratch-resistant epoxy powder coated finish',
-      'Multiple locking systems available (Key, Padlock, Digital)',
-      'Flush mount or standalone installation'
+      'Dual-tone powder coated metal doors with stamped louvered ventilation slots'
     ],
-    specs: {
-      'Material': 'Cold Rolled Steel / SS 304',
-      'Finish': 'Durable Powder Coating',
-      'Ventilation': 'Integrated Door Louvers',
-      'Number of Tiers': 'Customizable (1, 2, 3, 4, 5)',
-      'Access Control': 'Key / Combinational / Digital',
-      'Application': 'Changing Rooms / Lab Corridors'
+    technicalTable: {
+      headers: ['Parameter / Feature', 'Specification'],
+      rows: [
+        ['Product Type', 'Multi-compartment metal employee storage locker'],
+        ['Configuration', '3-Tier units (Single column or combined 3, 4, or 5-column modular banks)'],
+        ['Shown Dimensions (5-Bay Row)', 'Approx. 1500 mm (W) × 450 mm (D) × 1850 mm (H)'],
+        ['Standard Single Bay (W × D × H)', '300 mm × 450 mm × 1850 mm (Each bay has 3 compartments)'],
+        ['Material Construction', 'Heavy-gauge cold-rolled mild steel sheet (0.7 mm – 0.9 mm thickness)'],
+        ['Surface Finish', 'Scratch-resistant electrostatic powder coating (Dual-tone: Charcoal Grey frame + Light Grey doors)'],
+        ['Ventilation', 'Stamped dual-column louvered ventilation slots on each door'],
+        ['Locking Mechanism', 'Recessed pull handle with built-in padlock hasp (Optional: Cam key lock or combination lock)'],
+        ['Hinges', 'Concealed internal pivot hinges for tamper resistance and clean exterior lines'],
+        ['Base Support', 'Elevated sturdy steel square legs (allows floor cleaning and prevents floor moisture damage)'],
+        ['Internal Fittings', 'Each locker includes internal coat/bag hooks and smooth shelf dividers']
+      ]
     }
   },
   {
     slug: 'executive-cabinet',
     name: 'Executive Cabinet',
     category: 'Air Cleaning Equipments',
-    description: 'High-end stainless steel executive cabinet designed for sterile laboratory and pharmaceutical environments. Combining aesthetic appeal with extreme durability, this cabinet provides secure storage for sensitive equipment, documents, or high-value laboratory essentials.',
+    description: 'This premium stainless steel executive storage cabinet is engineered for cleanrooms, laboratories, healthcare facilities, and executive workspaces that demand high hygiene, secure organization, and long service life. Built with an ergonomic dual-tier setup, it combines clear-view display shelves for rapid item identification with enclosed, lockable bottom storage for sensitive equipment and records.',
     image: 'https://toptec.pk/wp-content/uploads/2024/12/Executive-cabinet.png',
     features: [
-      'Premium SS 304/316L stainless steel construction',
-      'Upper section with transparent tempered glass sliding doors',
-      'Lower storage section with solid lockable doors and drawers',
-      'Seamless, hygienic finish to prevent bacterial growth',
-      'Adjustable internal shelving for versatile storage',
-      'Lockable compartments for enhanced security',
-      'Corrosion and chemical resistant surfaces'
+      'Upper transparent glass sliding doors and lower solid stainless steel doors'
     ],
-    specs: {
-      'Material': 'Stainless Steel 304 / 316L',
-      'Top Doors': 'Tempered Glass (Sliding)',
-      'Bottom Doors': 'SS Solid (Swing)',
-      'Drawers': 'Integrated SS Drawers',
-      'Finish': 'Brushed / Mirror Polish',
-      'Grade': 'Pharmaceutical / Laboratory'
+    technicalTable: {
+      headers: ['Parameter / Feature', 'Specification'],
+      rows: [
+        ['Product Name', 'Stainless Steel Executive Storage Cabinet'],
+        ['Standard Dimensions (W × D × H)', 'Custom sizes available'],
+        ['Material Construction', 'High-grade SS 304 / SS 316 stainless steel sheet (1.0 mm – 1.2 mm gauge)'],
+        ['Surface Finish', 'Smooth satin / hairline brushed non-reflective finish'],
+        ['Upper Section Configuration', '2-Door sliding cabinet with framed transparent tempered glass view panels'],
+        ['Upper Shelving', '2× Adjustable/fixed heavy-load stainless steel internal shelves (3 storage tiers)'],
+        ['Mid-Section Configuration', '2× Smooth-glide utility drawers with individual key locks'],
+        ['Lower Section Configuration', '2-Door solid stainless steel hinged cabinet with central lock'],
+        ['Locking Mechanism', 'Independent cam key locks on drawers and lower doors for secure access'],
+        ['Handles & Hardware', 'Integrated flush stainless steel recessed pull handles (sliding doors) and stainless steel knobs'],
+        ['Base Support', 'Flat, enclosed floor base with internal leveling studs for stability and hygiene'],
+        ['Compliance Standard', 'cGMP, ISO Class 5 to Class 8 cleanrooms, and sterile laboratory standards']
+      ]
     }
   },
   {
@@ -490,20 +501,6 @@ TOPTEC pharmaceutical doors play an essential role in preventing cross-contamina
     specs: {
       'Applications': 'Pharmaceutical workshop, clean room, hospital, office, etc.',
       'Material': 'Mild Steel / Stainless Steel'
-    }
-  },
-  {
-    slug: 'pharma-door',
-    name: 'Pharma Door',
-    category: 'Air Cleaning Equipments',
-    description: 'Specialized Pharma Door designed for clean room and pharmaceutical applications.',
-    image: 'https://toptec.pk/wp-content/uploads/2024/12/pharma-door.avif',
-    features: [
-      'Designed for clean rooms and pharmaceutical facilities',
-      'High quality cleanroom standard finish'
-    ],
-    specs: {
-      'Application': 'Cleanroom / Pharmaceutical'
     }
   }
 ];

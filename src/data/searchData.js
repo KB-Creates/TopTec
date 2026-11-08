@@ -53,6 +53,7 @@ export const searchData = [
   { name: 'Dispensing Booths', type: 'Subcategory', href: '/air/dispensing-booths' },
   { name: 'Fan Filter Units (FFU)', type: 'Subcategory', href: '/air/ffu' },
   { name: 'Fan Filter Unit (FFU)', type: 'Product', href: '/product/fan-filter-unit' },
+  { name: 'Pharma Doors', type: 'Subcategory', href: '/air/doors' },
 
   // Subcategories - Laboratory Furniture
   { name: 'SS 316L Lockers', type: 'Subcategory', href: '/furniture/ss-lockers' },

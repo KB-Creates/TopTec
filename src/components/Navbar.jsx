@@ -355,8 +355,6 @@ const Navbar = () => {
       href: '/categories/hvac-systems',
       subcategories: [
         { name: 'AHU (Air Handling Units)', href: '/hvac/ahu' },
-        { name: 'FCU (Fan Coil Units)', href: '/hvac/fcu' },
-        { name: 'Chillers', href: '/hvac/chillers' },
         { name: 'Dehumidifiers / Humidifiers', href: '/hvac/dehumidifiers' },
         { name: 'Ducting Systems', href: '/hvac/ducting' },
         { name: 'Air Diffusers / Grilles', href: '/hvac/diffusers' },
