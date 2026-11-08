@@ -42,6 +42,7 @@ export const searchData = [
   { name: 'Laminar Air Flow (LAF) Hoods', type: 'Subcategory', href: '/air/laminar-flow' },
   { name: 'Biosafety Cabinets Class II', type: 'Subcategory', href: '/air/biosafety-cabinets' },
   { name: 'Fume Hoods & Extraction', type: 'Subcategory', href: '/air/fume-hoods' },
+  { name: 'Fume Hood', type: 'Product', href: '/product/fume-hood' },
   { name: 'Pass Boxes (Dynamic/Static)', type: 'Subcategory', href: '/air/pass-boxes' },
   { name: 'Air Showers', type: 'Subcategory', href: '/air/air-showers' },
   { name: 'Sampling Booths', type: 'Subcategory', href: '/air/sampling-booths' },

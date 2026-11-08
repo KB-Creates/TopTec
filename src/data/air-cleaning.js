@@ -364,6 +364,30 @@ TOPTEC pharmaceutical doors play an essential role in preventing cross-contamina
     }
   },
   {
+    slug: 'fume-hood',
+    name: 'Fume Hood',
+    category: 'Air Cleaning Equipments',
+    subcategory: 'Fume Hoods & Extraction Units',
+    subcategorySlug: '/air/fume-hoods',
+    description: 'Designed for demanding lab applications, this fume hood combines a robust powder-coated mild steel outer structure with a seamless stainless steel inner workstation. The electrostatic epoxy exterior delivers superior strength and anti-corrosive protection, while the stainless steel work chamber ensures high heat tolerance, smooth decontamination, and resistance to chemical spills and solvents. Complete with a counterbalanced glass sash, targeted fume exhaust baffles, and built-in safety controls, it provides reliable protection, easy maintenance, and long service life for research, quality control, and testing laboratories.',
+    image: '/images/fume-hood.png',
+    specs: {
+      'Model': 'TT-FHC',
+      'External Dimension (mm)': 'As Per Required',
+      'Internal Dimension (mm)': 'As Per Required',
+      'Window Opening Height (mm)': '700',
+      'Exhaust Volume (m³/h)': '1300 / 1500 / 1800',
+      'Exhaust Diameter (mm)': 'φ250',
+      'Surface Velocity (m/s)': '0.3~0.5',
+      'LED Lamp': '30W *1pc',
+      'Sound Emission (dB)': 'Less than 65',
+      'Power Input Voltage': 'AC 220V, 50/60Hz',
+      'Current and Power of Power Socket': '10A, 2200W',
+      'Standard Accessories': 'Main cabinet, Base cabinet, LED lamp, Socket',
+      'Optional Accessories': 'Water accessories: Water tap, PP sink, SS sink, Gas valve, Gas nozzle, Water valve, Water nozzle'
+    }
+  },
+  {
     slug: 'shoes-changing-bench-shoes-cabinet',
     name: 'Shoes-Changing Bench / Shoes Cabinet',
     category: 'Air Cleaning Equipments',

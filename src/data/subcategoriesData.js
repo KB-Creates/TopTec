@@ -70,7 +70,7 @@ export const subcategoriesRegistry = {
     parentCategory: 'Air Cleaning',
     parentCategorySlug: 'air-cleaning',
     description: 'Protect your laboratory personnel from hazardous chemical vapors, gases, and airborne dust with our high-performance fume hoods and fume extraction systems. Built with chemical-resistant interiors and smooth, counterbalanced sashes, these units quickly capture and exhaust toxic fumes before they can enter the room air. They offer steady, aerodynamic airflow, low noise levels, and simple control panels to ensure safe and comfortable daily operations. Whether you need ducted chemical hoods, ductless filtration units, or local fume extraction arms, our systems provide reliable containment for chemical synthesis, pharmaceutical manufacturing, and testing laboratories.',
-    keywords: ['fume', 'extraction', 'exhaust hood'],
+    keywords: ['fume-hood', 'fume hood', 'fume hoods', 'chemical fume hood', 'exhaust hood'],
   },
   '/air/purifiers': {
     title: 'Industrial & Lab Air Purifiers',
