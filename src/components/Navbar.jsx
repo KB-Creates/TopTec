@@ -119,7 +119,7 @@ const Navbar = () => {
         { name: 'Fume Hoods / Fume Extraction', href: '/air/fume-hoods' },
         { name: 'Air Purifiers', href: '/air/purifiers' },
         { name: 'Pass Boxes', href: '/air/pass-boxes' },
-        { name: 'Sampling Booths', href: '/air/sampling-booths' },
+        { name: 'Sampling Booths', href: '/air/dispensing-booths' },
         { name: 'Dispensing Booths', href: '/air/dispensing-booths' },
         { name: 'Air Showers', href: '/air/air-showers' },
         { name: 'Fan Filter Units (Ffu)', href: '/air/ffu' },

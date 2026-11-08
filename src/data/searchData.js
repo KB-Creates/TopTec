@@ -43,10 +43,16 @@ export const searchData = [
   { name: 'Biosafety Cabinets Class II', type: 'Subcategory', href: '/air/biosafety-cabinets' },
   { name: 'Fume Hoods & Extraction', type: 'Subcategory', href: '/air/fume-hoods' },
   { name: 'Fume Hood', type: 'Product', href: '/product/fume-hood' },
+  { name: 'Air Purifiers', type: 'Subcategory', href: '/air/purifiers' },
+  { name: 'Air Purifier', type: 'Product', href: '/product/air-purifier' },
   { name: 'Pass Boxes (Dynamic/Static)', type: 'Subcategory', href: '/air/pass-boxes' },
+  { name: 'Pass Boxes (Dynamic & Static)', type: 'Product', href: '/product/pass-boxes' },
   { name: 'Air Showers', type: 'Subcategory', href: '/air/air-showers' },
+  { name: 'Air Shower', type: 'Product', href: '/product/air-shower-standard' },
   { name: 'Sampling Booths', type: 'Subcategory', href: '/air/sampling-booths' },
   { name: 'Dispensing Booths', type: 'Subcategory', href: '/air/dispensing-booths' },
+  { name: 'Fan Filter Units (FFU)', type: 'Subcategory', href: '/air/ffu' },
+  { name: 'Fan Filter Unit (FFU)', type: 'Product', href: '/product/fan-filter-unit' },
 
   // Subcategories - Laboratory Furniture
   { name: 'SS 316L Lockers', type: 'Subcategory', href: '/furniture/ss-lockers' },

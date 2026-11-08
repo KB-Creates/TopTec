@@ -3,36 +3,28 @@ export const airCleaningProducts = [
     slug: 'air-shower-standard',
     name: 'Air Shower',
     category: 'Air Cleaning Equipments',
-    description: 'An air shower is a sealed room, which is located in a cleanroom or controlled environment to prevent contaminants from entering on people or objects. They will remove particles from a surface using filtered, high-velocity air before allowing the air into a clean area. TOPTEC is the largest manufacturer of air showers for demanding applications.',
+    subcategory: 'Air Showers',
+    subcategorySlug: '/air/air-showers',
+    description: 'This cleanroom air shower acts as an essential entryway barrier between uncontrolled areas and sterile cleanroom environments. Designed to remove loose dust, fibers, and particulate matter from personnel before entry, it prevents external contaminants from compromising sensitive production or laboratory zones.',
     image: 'https://toptec.pk/wp-content/uploads/2024/04/Air-Shower-Image-768x768.png',
-    features: [
-      'SS nozzle diameter: φ25mm',
-      'Material: Powder coated steel / Stainless steel',
-      'Controller: Electronic control panel / Inter Locking',
-      'Power supply: 220V/380V',
-      'High-velocity filtered air decontamination',
-      'Interlocked door system for containment'
-    ],
-    specs: {
-      'Nozzle Velocity': '≥ 25 m/s',
-      'Noise Level': '< 68 dB',
-      'HEPA Efficiency': '99.99%',
-      'Frame Material': 'Epoxy Powder Coated / SS',
-      'Baseplate': 'Stainless Steel',
-      'Door System': 'Electronic Interlocking'
-    },
     technicalTable: {
-      headers: ['Item', 'TT-1450/1', 'TT-1450/2', 'TT-1450/3'],
+      headers: ['Parameter / Feature', 'Standard Specification'],
       rows: [
-        ['External Size (WxLxH mm)', '1450x1000x2050', '1450x2000x2050', '1450x3000x2050'],
-        ['Internal Size (WxLxH mm)', '1000x800x1950', '1000x1900x1950', '1000x2900x1950'],
-        ['Door width (W mm)', '680', '680', '680'],
-        ['Nozzle in stainless steel (pc)', '12', '24', '36'],
-        ['Fan Power (W/set)', '550', '550', '750'],
-        ['Fan Quantity /set', '2', '4', '6'],
-        ['HEPA Filter Size (mm)', '484*484*69', '484*484*69', '484*484*69'],
-        ['Pre-Filter Size (mm)', '445*380*17', '445*380*17', '445*380*17'],
-        ['Total power supply (W)', '1160', '2270', '3380'],
+        ['Product Type', 'Cleanroom air shower (Modular walk-in cabin)'],
+        ['External Dimensions (W × D × H)', 'Custom sizes available'],
+        ['Internal Dimensions (W × D × H)', 'Custom sizes available'],
+        ['Material Construction', 'Cold-rolled steel with epoxy powder coating or full Stainless Steel (SS 304 / SS 201)'],
+        ['Internal Flooring', 'Stainless steel sheet floor'],
+        ['Number of Nozzles', 'Multi-directional 360° rotating stainless steel jet nozzles (both side walls)'],
+        ['Nozzle Air Velocity', '20 – 25 m/s (High-velocity shearing action)'],
+        ['Filtration Stages', 'Pre-Filter: G4 Pre-Filter (at return air intake) | Main Filter: H14 HEPA filter (99.99% efficiency @ 0.3 µm)'],
+        ['Door Construction', 'Heavy-duty SS / aluminum frame door with transparent tempered glass view panel'],
+        ['Door Interlock System', 'Electronic magnetic interlock (prevents both doors from opening simultaneously)'],
+        ['Blower & Motor', 'Low-noise, high-pressure centrifugal fan assembly'],
+        ['Control System', 'Microprocessor/PLC digital panel with adjustable cycle timer (0–99 seconds)'],
+        ['Safety Features', 'External & internal emergency stop buttons to instantly release door locks'],
+        ['Lighting', 'Flush-mounted, energy-efficient cleanroom LED ceiling light (> 300 Lux)'],
+        ['Power Supply', '220V / 380V, 50Hz / 60Hz (Three-phase or Single-phase)']
       ]
     }
   },
@@ -144,22 +136,22 @@ TOPTEC pharmaceutical doors play an essential role in preventing cross-contamina
     subcategorySlug: '/air/dispensing-booths',
     description: 'The Dispensing/Sampling Booth (also known as a Weighing Booth) is a specialized purified equipment used in pharmaceutical, microbiological research, and scientific experiments. It provides a vertical unidirectional airflow (laminar flow) that creates a negative pressure environment in the work area to prevent cross-contamination and protect operators from inhaling powders.',
     image: 'https://toptec.pk/wp-content/uploads/2024/12/Dispensingsampling-768x768.jpg',
-    features: [
-      'Negative pressure design to prevent powder escape',
-      'ISO Class 5 (Class 100) clean environment',
-      'Three-stage filtration: Pre-filter, Medium, and HEPA',
-      'Adjustable frequency fan for constant air velocity',
-      'Pressure gauges for filter monitoring',
-      'Stainless steel 304 or 316L construction',
-      'Transparent PVC curtains for containment'
-    ],
-    specs: {
-      'Class': 'ISO Class 5',
-      'Air Velocity': '0.45 m/s ± 20%',
-      'Filtration': 'HEPA Filter (99.99%)',
-      'Pressure': '-10 to -25 Pa (Negative)',
-      'Material': 'Stainless Steel 304/316L',
-      'Noise Level': '< 65 dB(A)'
+    technicalTable: {
+      headers: ['Parameter / Feature', 'Sampling Booth', 'Dispensing Booth'],
+      rows: [
+        ['Primary Application', 'Raw material inspection, sterile sampling, quality control checks', 'Bulk powder dispensing, precision weighing, API batching'],
+        ['Material Construction', 'Stainless Steel 304 / Stainless Steel 316L / Stainless Steel 201 (satin finish) with coved hygienic corners', 'Stainless Steel 304 / Stainless Steel 316L / Stainless Steel 201 (satin finish) with coved hygienic corners'],
+        ['Airflow Pattern', 'Vertical laminar downflow with reverse air extraction (RLAF)', 'Vertical laminar downflow with reverse air extraction (RLAF)'],
+        ['Airflow Velocity', '0.36 – 0.54 m/s (70 – 100 FPM)', '0.36 – 0.54 m/s (70 – 100 FPM)'],
+        ['Containment Principle', 'Negative pressure relative to adjacent room (prevents dust escape)', 'Negative pressure relative to adjacent room with active dust scavenging'],
+        ['Air Filtration System', '3-Stage Filtration: Primary: G4 Pre-filter | Secondary: F8 Intermediate | Supply: H14 HEPA (99.99% @ 0.3 µm)', '3/4 Filtration: Primary: G4 Pre-filter | Secondary: F8 Intermediate | Supply: H14 HEPA'],
+        ['DOP Testing / DOP Port', 'Upstream PAO/DOP test ports with airtight caps for supply HEPA validation', 'Dual upstream PAO/DOP test ports for both supply'],
+        ['Pressure Monitoring', '1× Magnehelic Differential Pressure Gauge (Pre-filter & HEPA filter)', '1× Magnehelic Differential Pressure Gauge (Pre-filter, HEPA supply, & Exhaust HEPA)'],
+        ['Side Containment', 'PVC strip curtains', 'Stainless steel side walls / Anti-static PVC flexible containment curtains'],
+        ['Control System', 'Microprocessor/PLC controller with Blower Speed (Manual Control), lighting & UV controls', 'Advanced PLC + Touchscreen HMI with velocity sensor & airflow (Manual Control)'],
+        ['Electrical & Lighting', 'Flameproof / IP65 LED teardrop lighting (> 800 Lux), splash-proof 5/15A sockets', 'Flameproof / IP65 LED teardrop lighting (> 800 Lux), integrated weighing scale power sockets'],
+        ['Compliance Standard', 'ISO Class 5 (Class 100), cGMP, US FDA 21 CFR Part 11 ready', 'ISO Class 5 (Class 100), cGMP, US FDA 21 CFR Part 11 ready']
+      ]
     }
   },
   {
@@ -305,28 +297,29 @@ TOPTEC pharmaceutical doors play an essential role in preventing cross-contamina
   },
   {
     slug: 'fan-filter-unit',
-    name: 'Fan Filter Unit',
+    name: 'Fan Filter Unit (FFU)',
     category: 'Air Cleaning Equipments',
     subcategory: 'Fan Filter Units (FFU)',
     subcategorySlug: '/air/ffu',
-    description: 'Fan filter units are stand-alone units with integrated HEPA-filter, fans, and control systems. They supply purified air to cleanrooms and laboratories within the life-science, food-and-beverage and microelectronic industries by removing harmful airborne particles from recirculating air.\n\nFan filter unit is a containment equipment module utilizing a zoned unidirectional (laminar) down flow supply of air to positively pressurize and purge the working environment from potential contaminants; thereby providing enhanced aseptic work zones for maintaining process integrity and/or product protection. Medical Industry (i.e., operating theatre) Pharmaceutical Industry Research and Development Laboratories',
+    description: 'This Fan Filter Unit (FFU) is a compact, self-contained motorized air purification unit designed to generate a continuous stream of filtered, laminar airflow for cleanrooms, laminar flow hoods, and sterile assembly benches. Fitted with an internal centrifugal motorized fan and high-efficiency filtration, it pulls in air through its top protective mesh, pressurizes the internal plenum, and pushes clean, particle-free air downward to eliminate dust, micro-particles, and airborne contaminants.',
     image: 'https://toptec.pk/wp-content/uploads/2024/04/fan-filter-unit.png',
-    features: [
-      'Stand-alone units with integrated HEPA-filter, fans, and control systems',
-      'Supplies purified air to cleanrooms and laboratories',
-      'Zoned unidirectional (laminar) down flow supply of air',
-      'Positively pressurizes and purges working environment from contaminants',
-      'Provides enhanced aseptic work zones for process integrity and product protection'
-    ],
-    specs: {
-      'Modal': 'TTFFU',
-      'Material': 'Stainless Steel 304SUS or 201SUS',
-      'Power Supply': '220VAC 50/60Hz',
-      'Controller': 'Manual Button',
-      'UV Light': 'Installed Optional',
-      'Florescent Light': 'Installed',
-      'Blower Type': 'High Flow',
-      'PVC Curtain': 'All Side'
+    technicalTable: {
+      headers: ['Parameter / Feature', 'Specification'],
+      rows: [
+        ['Product Type', 'Fan Filter Unit (FFU)'],
+        ['Standard Dimensions (L × W × H)', 'As Per Requirment'],
+        ['Casing Material', 'Mild Steel Powder Coated / Oblique Stainless Steel'],
+        ['Return Filter (Air Intake)', 'G4 washable pre-filter'],
+        ['Main Filter (Filtration)', 'H14 Mini-Pleat HEPA Filter (99.99% efficiency @ 0.3 µm)'],
+        ['DOP Testing / DOP Port', 'Upstream PAO/DOP test port with airtight sealed cap (for filter integrity testing)'],
+        ['Blower (Fan Motor)', 'Direct-drive backward-curved centrifugal fan with protective wire intake guard'],
+        ['Airflow Capacity', '1000 – 1200 m³/h (588 – 706 CFM)'],
+        ['Air Velocity', '0.35 – 0.55 m/s (Uniform laminar face velocity)'],
+        ['Controller', 'On/Off Switch'],
+        ['Noise Level', '49 – 54 dB(A)'],
+        ['Power Supply', 'Single-Phase 220V / 50Hz with pre-wired power lead and plug'],
+        ['Installation / Mounting', 'Direct overhead frame mounting, hood top integration, or clean booth grid support']
+      ]
     }
   },
   {
@@ -385,6 +378,49 @@ TOPTEC pharmaceutical doors play an essential role in preventing cross-contamina
       'Current and Power of Power Socket': '10A, 2200W',
       'Standard Accessories': 'Main cabinet, Base cabinet, LED lamp, Socket',
       'Optional Accessories': 'Water accessories: Water tap, PP sink, SS sink, Gas valve, Gas nozzle, Water valve, Water nozzle'
+    }
+  },
+  {
+    slug: 'air-purifier',
+    name: 'Air Purifier',
+    category: 'Air Cleaning Equipments',
+    subcategory: 'Air Purifiers',
+    subcategorySlug: '/air/purifiers',
+    description: 'This floor-standing industrial air purifier provides reliable, high-volume air decontamination for cleanrooms, laboratories, and sensitive indoor facilities. Constructed with a powder-coated steel body, it draws contaminated air through a high-capacity lower grille and expels purified air through an angled top diffuser for optimal room distribution. Complete with heavy-duty casters for smooth mobility, quick-release handles for easy filter servicing, and side-mounted controls, it offers a dependable, low-maintenance air cleaning solution for professional environments.',
+    image: '/images/air-purifier.png',
+    specs: {
+      'Overall Size (W × D × H)': 'Custom sizes available',
+      'Primary Filtration': 'H13 / H14 True HEPA Filter (99.97% to 99.99% efficiency @ 0.3 μm)',
+      'Return Filter': 'G4 Pre-Filter (removes coarse dust, hair, and fibers)',
+      'Blower (Fan System)': 'High-efficiency backward-curved centrifugal blower (Direct-drive AC)',
+      'Airflow Capacity': '800 – 1200 m³/h (470 – 700 CFM)',
+      'Controller': 'LCD',
+      'Noise Level': '≤ 52 dB(A) at normal speed',
+      'Body Material': 'Mild Steel Powder Coated / Stainless Steel',
+      'Mobility': '4× Heavy-duty swivel casters (with brake locks)'
+    }
+  },
+  {
+    slug: 'pass-boxes',
+    name: 'Pass Boxes (Dynamic & Static)',
+    category: 'Air Cleaning Equipments',
+    subcategory: 'Pass Boxes (Dynamic & Static)',
+    subcategorySlug: '/air/pass-boxes',
+    description: 'Cleanroom Pass Boxes provide a secure, airtight transfer system designed to move materials between cleanrooms and non-clean areas without cross-contamination. By minimizing personnel traffic and door openings, these units protect controlled environments in pharmaceuticals, biotechnology, electronics, and hospital laboratories.',
+    image: '/images/pass-box.png',
+    technicalTable: {
+      headers: ['Feature', 'Static Pass Box', 'Dynamic Pass Box'],
+      rows: [
+        ['Material Construction', 'Stainless Steel 304 / Stainless Steel 201 or Powder-Coated Steel Exterior', 'Stainless Steel 304 / Stainless Steel 201 or Powder-Coated Steel Exterior'],
+        ['Standard Internal Sizes (mm)', 'As Per Requirement', 'As Per Requirement'],
+        ['Interlock Mechanism', 'Electronic or Mechanical Interlocking', 'Electronic or Mechanical Interlocking'],
+        ['Air Filtration', 'None (Passive air barrier)', 'H14 HEPA Filter (99.99% @ 0.3 μm)'],
+        ['Airflow Type', 'Passive Airlock', 'Vertical Laminar Airflow (0.36 – 0.54 m/s)'],
+        ['Pressure Monitoring', 'N/A', 'Magnehelic Differential Pressure Gauge (0–500 Pa)'],
+        ['Disinfection', 'UV light installed inside the chamber', 'UV light installed inside the chamber'],
+        ['Door Construction', 'SS Frame with transparent glass window', 'SS Frame with transparent glass window'],
+        ['DOP Testing / DOP Port', 'Not Applicable (No HEPA filter installed)', 'Integrated upstream PAO/DOP test port with airtight sealing cap (for HEPA filter integrity and leak validation)']
+      ]
     }
   },
   {
