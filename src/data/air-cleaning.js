@@ -151,22 +151,23 @@ export const airCleaningProducts = [
     slug: 'cross-over-bench',
     name: 'Cross Over Bench',
     category: 'Air Cleaning Equipments',
-    description: 'Cross Over Benches are essential for cleanroom transition areas, separating the "clean" area from the "dirty" area. They are designed for personnel to change footwear while ensuring hygiene and preventing cross-contamination in pharmaceutical and laboratory environments.',
+    description: 'This stainless steel crossover bench serves as a physical and hygienic barrier between the "dirty/street" area and the "clean/sterile" gowning zone in cleanroom entry airlocks. Operators sit on the bench to remove outside footwear, swing their legs across the bench, and put on sterile cleanroom booties or shoe covers, preventing floor-level cross-contamination.',
     image: 'https://toptec.pk/wp-content/uploads/2024/12/cross-over-bench-768x768.webp',
-    features: [
-      'Stainless steel 304 or 316L high-grade construction',
-      'Ergonomic design for personnel transition',
-      'Seamless, ledge-free surfaces for easy sterilization',
-      'Heavy-duty load-bearing capacity',
-      'Available in L-shape or straight configurations',
-      'Adjustable floor leveling system'
-    ],
-    specs: {
-      'Material': 'Stainless Steel 304 / 316L',
-      'Finish': 'Satin / Mirror Polish',
-      'Grade': 'Pharmaceutical / GMP',
-      'Shape': 'L-Shape / Linear',
-      'Cleaning': 'Washable & Chemical Resistant'
+    technicalTable: {
+      headers: ['Parameter / Feature', 'Specification'],
+      rows: [
+        ['Product Type', 'Cleanroom cross over / step-over bench (Change room boundary barrier)'],
+        ['Configuration / Layout', 'L-Shaped corner configuration (Also available in straight/linear format)'],
+        ['Standard Dimensions (L × W × H)', 'Custom dimensions available'],
+        ['Material Construction', 'High-grade SS 304 or SS 316 stainless steel sheet (1.2 mm to 1.5 mm gauge)'],
+        ['Corner & Edge Finish', 'Smooth rounded bullnose radius on outer corner and top edges (snag-free safety profile)'],
+        ['Surface Finish', 'Hygienic satin hairline brushed finish / electro-polished (non-reflective)'],
+        ['Structure Type', 'Fully enclosed solid box structure with heavy internal reinforcement ribs'],
+        ['Storage Option (Optional)', 'Solid closed front (standard) or integrated lower shoe compartments/racks'],
+        ['Base Support', 'Flat floor-resting skirt (silicone-seal ready) or internal adjustable leveling studs'],
+        ['Weight Capacity', '≥ 250 kg continuous static load'],
+        ['Compliance Standard', 'ISO Class 4 to Class 8 cleanrooms, cGMP, and US FDA gowning room standards']
+      ]
     }
   },
   {
@@ -205,23 +206,22 @@ export const airCleaningProducts = [
     slug: 'cleanroom-window',
     name: 'Cleanroom Window',
     category: 'Air Cleaning Equipments',
-    description: 'Specialized double-glazed windows designed for pharmaceutical and electronic cleanrooms. These windows feature a vacuum-sealed design with internal desiccant to eliminate condensation and ensure maximum visibility and hygiene.',
+    description: 'This cleanroom observation window is designed for cleanroom partition walls to provide broad visual monitoring while maintaining strict room isolation, pressure integrity, and hygiene standards. Built to sit completely flush with standard cleanroom sandwich wall panels on both sides, it prevents dust accumulation and allows effortless wipe-down disinfection.',
     image: 'https://toptec.pk/wp-content/uploads/2024/04/window-410x410.png',
-    features: [
-      'Vacuum-sealed with desiccant to prevent internal condensation',
-      'Pre-assembled in factory to ensure zero dust accumulation',
-      'Completely smooth and flush connection with wall panels on both sides',
-      'Double tempered glass for enhanced safety and durability',
-      'Aesthetic black border surround for premium appearance',
-      'Easy to clean/sanitize surfaces'
-    ],
-    specs: {
-      'Type': 'Double Glazed / Vacuum Sealed',
-      'Glass': 'Double Tempered Safety Glass',
-      'Anti-Fog': 'Integrated Desiccant System',
-      'Mounting': 'Double-sided Flush Mount',
-      'Border': 'Aesthetic Black Frame',
-      'Application': 'Pharmaceutical / Medical / Electronics'
+    technicalTable: {
+      headers: ['Parameter / Feature', 'Specification'],
+      rows: [
+        ['Product Type', 'Cleanroom double-glazed flush observation window'],
+        ['Standard Dimensions (W × H)', 'Custom sizes available'],
+        ['Panel Thickness Fit', '50 mm (Matches standard 50 mm cleanroom wall panels; 75 mm / 100 mm optional)'],
+        ['Glass Type', 'Double-glazed transparent tempered safety glass (5 mm or 6 mm thickness per pane)'],
+        ['Border Design', 'High-temperature screen-printed black edge border (Optional: White border)'],
+        ['Internal Frame / Spacer', 'Anodized aluminum alloy spacer profile with integrated molecular sieve desiccant'],
+        ['Anti-Condensation Feature', 'Hermetically sealed dry-gas/desiccant chamber to prevent internal moisture and fogging'],
+        ['Perimeter Sealing', 'Structural silicone adhesive with high-elasticity EPDM rubber gaskets'],
+        ['Corner Type', 'Right-angle square corners (Optional: Rounded radius corners)'],
+        ['Cleanliness Standard', 'ISO Class 5 to Class 8, cGMP, and FDA compliant cleanroom facilities']
+      ]
     }
   },
   {
