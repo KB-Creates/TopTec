@@ -85,9 +85,14 @@ export const searchData = [
   { name: 'Cleanroom Sliding Door', type: 'Product', href: '/product/cleanroom-sliding-door' },
   { name: 'Cleanroom Electronic Door Interlock System', type: 'Product', href: '/product/cleanroom-electronic-door-interlock-system' },
   { name: 'Epoxy Flooring', type: 'Subcategory', href: '/sterile/flooring' },
+  { name: 'Cleanroom Lighting', type: 'Subcategory', href: '/sterile/lighting' },
+  { name: 'Cleanroom LED Teardrop Light', type: 'Product', href: '/product/cleanroom-led-teardrop-light' },
+  { name: 'Cleanroom Recessed Panel Light', type: 'Product', href: '/product/cleanroom-recessed-panel-light' },
+  { name: 'Cleanroom Yellow Warning Light', type: 'Product', href: '/product/cleanroom-yellow-warning-light' },
 
   // Subcategories - HVAC
   { name: 'AHU (Air Handling Units)', type: 'Subcategory', href: '/hvac/ahu' },
   { name: 'Chillers (Air/Water Cooled)', type: 'Subcategory', href: '/hvac/chillers' },
-  { name: 'Dehumidification Systems', type: 'Subcategory', href: '/hvac/dehumidifiers' }
+  { name: 'Dehumidification Systems', type: 'Subcategory', href: '/hvac/dehumidifiers' },
+  { name: 'Refrigeration Calculator', type: 'HVAC Tool', href: '/hvac/refrigeration-calculator' }
 ];

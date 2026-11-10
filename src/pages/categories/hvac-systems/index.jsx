@@ -15,6 +15,7 @@ const HVACSystems = () => {
     { name: 'Exhaust & Fresh Air Systems', href: '/hvac/exhaust' },
     { name: 'Pressurization Systems', href: '/hvac/pressurization' },
     { name: 'Precision Air Conditioning', href: '/hvac/precision-ac' },
+    { name: 'Refrigeration Calculator', href: '/hvac/refrigeration-calculator' },
   ];
 
   return (

@@ -13,6 +13,7 @@ import ProductionMachinery from './pages/categories/production-machinery/index.j
 import LaboratoryEquipment from './pages/categories/laboratory-equipment/index.jsx'
 import SterileProcessing from './pages/categories/sterile-processing/index.jsx'
 import HVACSystems from './pages/categories/hvac-systems/index.jsx'
+import RefrigerationCalculatorPage from './pages/categories/hvac-systems/RefrigerationCalculatorPage.jsx'
 
 import ProductPage from './pages/ProductPage.jsx'
 import AllProducts from './pages/AllProducts.jsx'
@@ -63,6 +64,7 @@ const router = createBrowserRouter([
       { path: "machinery/*", element: <SubcategoryPage /> },
       { path: "science/*", element: <SubcategoryPage /> },
       { path: "sterile/*", element: <SubcategoryPage /> },
+      { path: "hvac/refrigeration-calculator", element: <RefrigerationCalculatorPage /> },
       { path: "hvac/*", element: <SubcategoryPage /> },
     ],
   },

@@ -361,6 +361,7 @@ const Navbar = () => {
         { name: 'Exhaust & Fresh Air Systems', href: '/hvac/exhaust' },
         { name: 'Pressurization Systems', href: '/hvac/pressurization' },
         { name: 'Precision Air Conditioning (HVAC)', href: '/hvac/precision-ac' },
+        { name: 'Refrigeration Calculator', href: '/hvac/refrigeration-calculator' },
       ]
     },
   ];
