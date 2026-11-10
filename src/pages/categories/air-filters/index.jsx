@@ -1,19 +1,39 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import CategoryPage from '../CategoryPage';
 import { Filter } from 'lucide-react';
 
-import { airFiltersProducts } from '../../../data/air-filters';
+import { getSubcategoryData } from '../../../data/subcategoriesData';
+import { getProductsBySubcategory } from '../../../data';
+
+const subcategories = [
+  { name: 'Hepa Filters', href: '/filters/hepa' },
+  { name: 'Pre Filters', href: '/filters/pre' },
+  { name: 'Carbon/Activated Carbon Filters', href: '/filters/carbon' },
+  { name: 'Bag Filters', href: '/filters/bag' },
+  { name: 'V-Bank Filters', href: '/filters/v-bank' },
+  { name: 'Washable Filters', href: '/filters/washable' },
+  { name: 'Terminal Hepa Box', href: '/filters/terminal-hepa' },
+];
 
 const AirFilters = () => {
-  const subcategories = [
-    { name: 'Hepa Filters', href: '/filters/hepa' },
-    { name: 'Pre Filters', href: '/filters/pre' },
-    { name: 'Carbon/Activated Carbon Filters', href: '/filters/carbon' },
-    { name: 'Bag Filters', href: '/filters/bag' },
-    { name: 'V-Bank Filters', href: '/filters/v-bank' },
-    { name: 'Washable Filters', href: '/filters/washable' },
-    { name: 'Terminal Hepa Box', href: '/filters/terminal-hepa' },
-  ];
+  const products = useMemo(() => {
+    const uniqueProducts = [];
+    const seenSlugs = new Set();
+
+    subcategories.forEach((sub) => {
+      const subcategoryInfo = getSubcategoryData(sub.href);
+      const subProducts = getProductsBySubcategory(subcategoryInfo);
+      subProducts.forEach((product) => {
+        const key = product.slug || product.name;
+        if (!seenSlugs.has(key)) {
+          seenSlugs.add(key);
+          uniqueProducts.push(product);
+        }
+      });
+    });
+
+    return uniqueProducts;
+  }, []);
 
   return (
     <CategoryPage 
@@ -23,7 +43,7 @@ const AirFilters = () => {
       icon={<Filter size={32} />}
       image="/images/airfilters.png"
       subcategories={subcategories}
-      products={airFiltersProducts}
+      products={products}
     />
   );
 };

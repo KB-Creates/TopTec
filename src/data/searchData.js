@@ -79,7 +79,11 @@ export const searchData = [
 
   // Subcategories - Sterile Processing
   { name: 'Cleanroom Panels', type: 'Subcategory', href: '/sterile/panels' },
+  { name: 'Cleanroom Modular Panel', type: 'Product', href: '/product/cleanroom-modular-panel' },
   { name: 'Hermetically Sealed Doors', type: 'Subcategory', href: '/sterile/doors' },
+  { name: 'Cleanroom Single Swing Door', type: 'Product', href: '/product/cleanroom-single-swing-door' },
+  { name: 'Cleanroom Sliding Door', type: 'Product', href: '/product/cleanroom-sliding-door' },
+  { name: 'Cleanroom Electronic Door Interlock System', type: 'Product', href: '/product/cleanroom-electronic-door-interlock-system' },
   { name: 'Epoxy Flooring', type: 'Subcategory', href: '/sterile/flooring' },
 
   // Subcategories - HVAC
