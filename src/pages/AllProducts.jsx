@@ -31,7 +31,7 @@ const AllProducts = () => {
   });
 
   return (
-    <div className="min-h-screen bg-white pt-48 pb-24">
+    <div className="min-h-screen bg-white pt-24 sm:pt-26 md:pt-28 lg:pt-32 pb-16 lg:pb-24">
       <div className="container mx-auto px-8 lg:px-16">
         {/* Header Section */}
         <div className="max-w-3xl mb-16">

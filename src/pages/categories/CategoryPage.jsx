@@ -27,7 +27,7 @@ const CategoryPage = ({
   return (
     <div className="min-h-screen bg-white selection:bg-[#4A93C4]/20">
       {/* Ultra-Premium Hero Section */}
-      <section className="relative pt-42 pb-8 md:pt-32 md:pb-10 lg:pt-42 lg:pb-10 overflow-hidden">
+      <section className="relative pt-24 pb-8 sm:pt-26 md:pt-28 md:pb-10 lg:pt-32 lg:pb-10 overflow-hidden">
         {/* Advanced Background System */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 bg-linear-to-b from-[#F8F9FA] to-white"></div>

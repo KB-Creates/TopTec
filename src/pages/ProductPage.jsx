@@ -53,13 +53,10 @@ const ProductPage = () => {
     : product.name;
 
   return (
-    <div className="min-h-screen bg-white pt-10">
-      {/* Premium Header/Nav Spacer */}
-      <div className="h-24 sm:h-32"></div>
-
+    <div className="min-h-screen bg-white pt-24 sm:pt-26 md:pt-28 lg:pt-30">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         {/* Breadcrumbs & Back Button */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6 mb-6 lg:mb-8">
           <Link 
             to={-1} 
             className="flex items-center gap-2 text-sm font-bold text-[#5f6368] hover:text-[#4A93C4] transition-colors group"

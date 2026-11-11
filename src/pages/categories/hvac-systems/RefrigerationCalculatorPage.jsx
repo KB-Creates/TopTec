@@ -48,7 +48,7 @@ const RefrigerationCalculatorPage = () => {
   return (
     <div className="min-h-screen bg-white selection:bg-[#4A93C4]/20 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative pt-34 pb-10 sm:pt-40 sm:pb-14 lg:pt-46 lg:pb-18 bg-white">
+      <section className="relative pt-24 pb-10 sm:pt-26 sm:pb-12 md:pt-28 lg:pt-32 lg:pb-16 bg-white">
         <div className="container mx-auto px-4 sm:px-8 lg:px-16 relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#202124] tracking-[-0.03em] leading-[1.12] mb-4 sm:mb-5">
