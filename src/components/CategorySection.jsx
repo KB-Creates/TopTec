@@ -1,49 +1,49 @@
 import React from 'react';
-import { Wind, Filter, FlaskConical, Settings, Building2, Layers, Zap, ArrowRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const categories = [
   { 
     title: 'Air Filters', 
-    icon: <Filter size={24} />, 
-    desc: 'Our air filters are widely used in HVAC and AHU systems, cleanrooms, offices, commercial spaces, laboratories, clinics, hospitals, and similar environments.',
-    slug: 'air-filters'
+    desc: 'High-efficiency particulate, pre, and carbon filters for HVAC, AHU, cleanrooms, and sterile labs.',
+    slug: 'air-filters',
+    image: '/images/airfilters.png'
   },
   { 
     title: 'Air Cleaning', 
-    icon: <Wind size={24} />, 
-    desc: 'Advanced biosafety cabinets and laminar flow hoods to maintain ISO Grade A standards.',
-    slug: 'air-cleaning'
+    desc: 'Advanced biosafety cabinets, fume hoods, and laminar airflow systems for ISO clean environments.',
+    slug: 'air-cleaning',
+    image: '/images/flow hood.jpg'
   },
   { 
     title: 'Laboratory Furniture', 
-    icon: <Building2 size={24} />, 
-    desc: 'Durable SS 316L stainless steel workbenches and modular storage for medical laboratories.',
-    slug: 'laboratory-furniture'
+    desc: 'Durable SS 316L and powder-coated modular workbenches, cabinets, and trolleys for modern labs.',
+    slug: 'laboratory-furniture',
+    image: '/images/labfurniture.jpg'
   },
   { 
     title: 'Production Machinery', 
-    icon: <Settings size={24} />, 
     desc: 'Reliable tablet section, capsule filling, and liquid syrup section machinery for manufacturers.',
-    slug: 'production-machinery'
+    slug: 'production-machinery',
+    image: '/images/production-machinery.jpg'
   },
   { 
     title: 'Laboratory Equipment', 
-    icon: <FlaskConical size={24} />, 
-    desc: 'Precision analytical instruments and general lab equipment for strict quality control.',
-    slug: 'laboratory-equipment'
+    desc: 'Precision analytical instruments, HPLC systems, and testing apparatus for strict quality control.',
+    slug: 'laboratory-equipment',
+    image: '/images/hplc.jpg'
   },
   { 
     title: 'Clean Room', 
-    icon: <Layers size={24} />, 
-    desc: 'Complete modular cleanroom solutions featuring prefabricated panels, high-performance airtight doors, and antimicrobial flooring. We provide end-to-end turnkey engineering services, including design, installation, and rigorous validation.',
-    slug: 'sterile-processing'
+    desc: 'Turnkey modular cleanroom panels, airtight doors, interlock systems, and cleanroom LED lighting.',
+    slug: 'sterile-processing',
+    image: '/images/cleanroom-modular-panel.jpg'
   },
   { 
     title: 'HVAC', 
-    icon: <Zap size={24} />, 
-    desc: 'Specialized environmental control systems maintaining humidity and temperature for pharma.',
-    slug: 'hvac-systems'
+    desc: 'Precision air handling units, dehumidifiers, and environmental control systems for pharma plants.',
+    slug: 'hvac-systems',
+    image: '/images/hvac-ahu.jpg'
   },
 ];
 
@@ -70,47 +70,53 @@ const CategorySection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
             {categories.map((cat, idx) => (
               <Link
                 key={idx}
                 to={`/categories/${cat.slug}`}
-                className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-[#4A93C4]/5 transition-all group cursor-pointer flex flex-col h-full"
+                className={`bg-linear-to-br from-white via-[#FAFBFD] to-[#EEF5FA]/90 py-10 px-8 rounded-3xl border border-gray-200/75 hover:border-[#4A93C4]/40 shadow-sm transition-all duration-300 group cursor-pointer flex flex-col items-start justify-center text-left h-full relative overflow-hidden ${
+                  idx < 4
+                    ? 'lg:col-span-3'
+                    : idx === 6
+                      ? 'md:col-span-2 lg:col-span-4'
+                      : 'lg:col-span-4'
+                }`}
               >
-                <div className="w-12 h-12 rounded-2xl bg-gray-50 flex items-center justify-center text-[#202124] group-hover:bg-[#4A93C4] group-hover:text-white transition-all duration-500 mb-6 shrink-0 group-hover:scale-110">
-                  {cat.icon}
+                {/* Right-Masked Category Image Background */}
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-y-0 right-0 w-3/4 pointer-events-none overflow-hidden"
+                  style={{
+                    maskImage: 'linear-gradient(to left, rgba(0,0,0,1) 12%, rgba(0,0,0,0.45) 55%, transparent 94%)',
+                    WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,1) 12%, rgba(0,0,0,0.45) 55%, transparent 94%)',
+                  }}
+                >
+                  <img
+                    src={cat.image}
+                    alt=""
+                    loading="lazy"
+                    className="w-full h-full object-cover object-center opacity-[0.26] group-hover:opacity-[0.4] group-hover:scale-105 transition-all duration-500 mix-blend-multiply"
+                  />
                 </div>
-                <h3 className="text-xl font-semibold text-[#202124] mb-3 group-hover:text-[#4A93C4] transition-colors">
+
+                {/* Soft Left Scrim to Keep Copy Sharp */}
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-linear-to-r from-white/95 via-white/75 to-transparent pointer-events-none"
+                />
+
+                <h3 className="text-xl font-semibold text-[#202124] mb-3 group-hover:text-[#4A93C4] transition-colors relative z-10">
                   {cat.title}
                 </h3>
-                <p className="text-[#5f6368] text-sm leading-relaxed mb-6 grow">
+                <p className="text-[#5f6368] text-sm leading-relaxed relative z-10">
                   {cat.desc}
                 </p>
-                <div className="flex items-center gap-2 text-[12px] font-bold text-[#4A93C4] opacity-0 group-hover:opacity-100 transition-all transform -translate-x-2 group-hover:translate-x-0 mt-auto">
-                  Learn More <ArrowRight size={14} />
+                <div className="text-[#4A93C4] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1 -translate-x-1 group-hover:translate-y-0 group-hover:translate-x-0 absolute top-5 right-6 z-10">
+                  <ArrowUpRight size={18} />
                 </div>
               </Link>
             ))}
-
-            {/* Browse All Products Card */}
-            <Link
-              to="/all-products"
-              className="bg-[#202124] p-8 rounded-3xl border border-transparent shadow-xl hover:shadow-[#202124]/20 transition-all group cursor-pointer flex flex-col h-full relative overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-bl-full translate-x-8 -translate-y-8 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700"></div>
-              <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-white group-hover:bg-[#4A93C4] transition-all duration-500 mb-6 shrink-0 group-hover:scale-110">
-                <ArrowRight size={24} className="-rotate-45" />
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-3 transition-colors">
-                Browse All Products
-              </h3>
-              <p className="text-gray-400 text-sm leading-relaxed mb-6 grow">
-                Explore our comprehensive catalog of 500+ pharmaceutical-grade machines and components.
-              </p>
-              <div className="flex items-center gap-2 text-[12px] font-bold text-[#4A93C4] mt-auto">
-                View Catalog <ArrowRight size={14} />
-              </div>
-            </Link>
           </div>
         </div>
       </div>
