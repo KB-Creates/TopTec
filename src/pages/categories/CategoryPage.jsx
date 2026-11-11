@@ -55,8 +55,8 @@ const CategoryPage = ({
         </div>
 
         <div className="container mx-auto px-4 sm:px-8 lg:px-16 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="flex flex-col items-start">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center">
+            <div className="flex flex-col items-start order-2 lg:order-1">
 
               <div className="max-w-xl w-full">
                 <div className="mb-6 sm:mb-8">
@@ -88,7 +88,7 @@ const CategoryPage = ({
             </div>
 
             {/* Right Side: Category Image */}
-            <div className="relative mt-12 lg:mt-0">
+            <div className="relative order-1 lg:order-2">
               <div className="relative z-10 rounded-4xl sm:rounded-[3rem] overflow-hidden shadow-2xl shadow-[#4A93C4]/20 border-4 sm:border-8 border-white bg-linear-to-b from-[#8ebfed] via-[#c2daf2] to-[#edf3fa] flex items-center justify-center">
                 {image ? (
                   <img 
@@ -127,7 +127,7 @@ const CategoryPage = ({
                 
                 {products.length > 0 ? (
                   <>
-                    <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
+                    <div className="grid grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-6 lg:gap-8">
                       {currentProducts.map((product, idx) => (
                         <ProductCard key={idx} product={product} />
                       ))}

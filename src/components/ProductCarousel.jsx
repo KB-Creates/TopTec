@@ -68,7 +68,7 @@ const ProductCarousel = () => {
         {/* Carousel Container - Equal-height grid track matching Category/Subcategory ProductCard sizing */}
         <div 
           ref={scrollRef}
-          className="grid grid-flow-col auto-cols-[calc(100%-24px)] sm:auto-cols-[calc(50%-16px)] lg:auto-cols-[calc(33.333%-29px)] xl:auto-cols-[calc(22.222%-30px)] gap-6 sm:gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8"
+          className="grid grid-flow-col auto-cols-[calc(50%-6px)] sm:auto-cols-[calc(50%-16px)] lg:auto-cols-[calc(33.333%-29px)] xl:auto-cols-[calc(22.222%-30px)] gap-3 sm:gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {products.map((product) => (

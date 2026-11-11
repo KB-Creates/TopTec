@@ -32,7 +32,7 @@ const AllProducts = () => {
 
   return (
     <div className="min-h-screen bg-white pt-24 sm:pt-26 md:pt-28 lg:pt-32 pb-16 lg:pb-24">
-      <div className="container mx-auto px-8 lg:px-16">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16">
         {/* Header Section */}
         <div className="max-w-3xl mb-16">
           <span className="text-[#4A93C4] font-bold text-sm uppercase tracking-[0.2em] mb-4 block">
@@ -81,7 +81,7 @@ const AllProducts = () => {
         </div>
 
         {/* Product Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6 lg:gap-8">
           <AnimatePresence mode="popLayout">
             {filteredProducts.map((product) => (
               <motion.div

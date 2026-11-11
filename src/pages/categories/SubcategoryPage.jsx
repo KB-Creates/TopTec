@@ -109,7 +109,7 @@ const SubcategoryPage = () => {
 
                 {products.length > 0 ? (
                   <>
-                    <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
+                    <div className="grid grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-6 lg:gap-8">
                       {currentProducts.map((product, idx) => (
                         <ProductCard key={idx} product={product} />
                       ))}

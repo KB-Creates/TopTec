@@ -23,9 +23,9 @@ const ProductCard = ({ product, className = "" }) => {
         </div>
 
         {/* Content Section */}
-        <div className="p-4 sm:p-6 flex flex-col grow">
-          <div className="mb-3 sm:mb-4">
-            <h3 className="text-[13px] sm:text-[14px] font-bold text-[#202124] mb-1.5 sm:mb-2 group-hover:text-[#4A93C4] transition-colors">
+        <div className="p-3 sm:p-6 flex flex-col grow">
+          <div className="mb-2.5 sm:mb-4">
+            <h3 className="text-[12px] sm:text-[14px] leading-snug font-bold text-[#202124] mb-1 sm:mb-2 group-hover:text-[#4A93C4] transition-colors">
               {product.name}
             </h3>
             <p className="text-gray-500 text-[10px] sm:text-xs leading-relaxed line-clamp-2">
@@ -33,17 +33,17 @@ const ProductCard = ({ product, className = "" }) => {
             </p>
           </div>
 
-          <div className="mt-auto pt-4 sm:pt-6 border-t border-gray-50 flex items-center justify-between gap-3 sm:gap-4">
-            <div className="flex flex-col">
+          <div className="mt-auto pt-3 sm:pt-6 border-t border-gray-50 flex items-center justify-between gap-1.5 sm:gap-4">
+            <div className="flex flex-col shrink-0">
               <div className="flex items-center gap-1 sm:gap-1.5">
-                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500"></div>
-                <span className="text-[10px] sm:text-[11px] font-bold text-[#202124]">Available</span>
+                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0"></div>
+                <span className="text-[9px] sm:text-[11px] font-bold text-[#202124] whitespace-nowrap">Available</span>
               </div>
             </div>
             
-            <div className="h-9 sm:h-10 px-4 sm:px-5 bg-gray-50 text-[#202124] rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold group-hover:bg-[#202124] group-hover:text-white transition-all flex items-center gap-1.5 sm:gap-2">
+            <div className="h-7 sm:h-10 px-2.5 sm:px-5 bg-gray-50 text-[#202124] rounded-lg sm:rounded-xl text-[9px] sm:text-xs font-bold group-hover:bg-[#202124] group-hover:text-white transition-all flex items-center gap-1 sm:gap-2 whitespace-nowrap shrink-0">
               View Specs
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 group-hover:translate-x-1 transition-transform" />
             </div>
           </div>
         </div>
