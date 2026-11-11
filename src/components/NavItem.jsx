@@ -18,7 +18,7 @@ const DropdownItem = ({ item, isCompact = false, onSelect }) => {
       const rect = itemRef.current.getBoundingClientRect();
       const flyoutWidth = isNestedMultiCol ? 500 : 256;
       const estRows = isNestedMultiCol ? Math.ceil(subCount / 2) : subCount;
-      const estHeight = Math.min(estRows * 42 + 24, window.innerHeight - 130);
+      const estHeight = Math.min(estRows * 42 + 24, window.innerHeight - 105);
       setFlipLeft(rect.right + flyoutWidth > window.innerWidth - 16);
       setOpenUpward(rect.top + estHeight > window.innerHeight - 16);
     }
@@ -56,10 +56,10 @@ const DropdownItem = ({ item, isCompact = false, onSelect }) => {
             transition={{ duration: 0.15, ease: "easeOut" }}
             className={`absolute z-50 ${openUpward ? 'bottom-0' : 'top-0'} ${
               flipLeft ? 'right-full pr-1' : 'left-full pl-1'
-            } ${isNestedMultiCol ? 'w-[500px] max-w-[calc(100vw-2rem)]' : 'w-64'}`}
+            } ${isNestedMultiCol ? 'w-125 max-w-[calc(100vw-2rem)]' : 'w-64'}`}
           >
             <div
-              className={`bg-white rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.15)] border border-gray-100 max-h-[calc(100vh-130px)] overflow-y-auto ${
+              className={`bg-white rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.15)] border border-gray-100 max-h-[calc(100vh-105px)] overflow-y-auto ${
                 isNestedMultiCol ? 'p-3 grid grid-cols-2 gap-2' : 'py-2'
               }`}
             >
@@ -121,7 +121,7 @@ const NavItem = ({ item }) => {
       ? 'p-3 grid grid-cols-2 xl:grid-cols-3 gap-2'
       : 'p-3 grid grid-cols-2 gap-2';
 
-  const scrollClass = hasNestedChildren ? '' : 'max-h-[calc(100vh-130px)] overflow-y-auto';
+  const scrollClass = hasNestedChildren ? '' : 'max-h-[calc(100vh-105px)] overflow-y-auto';
 
   return (
     <div 
@@ -134,7 +134,7 @@ const NavItem = ({ item }) => {
         <Link 
           to={item.href}
           onClick={() => setIsOpen(false)}
-          className={`flex items-center gap-1 px-2.5 py-2 cursor-pointer text-[13px] font-medium uppercase transition-all tracking-wide outline-none whitespace-nowrap ${
+          className={`flex items-center gap-1 px-2.5 py-2 leading-5 cursor-pointer text-[13px] font-medium uppercase transition-all tracking-wide outline-none whitespace-nowrap ${
             isOpen ? 'text-[#4A93C4]' : 'text-[#3c4043] hover:text-[#4A93C4]'
           }`}
         >
@@ -150,7 +150,7 @@ const NavItem = ({ item }) => {
         <a 
           href={item.href}
           onClick={() => setIsOpen(false)}
-          className={`flex items-center gap-1 px-2.5 py-2 cursor-pointer text-[13px] font-medium uppercase transition-all tracking-wide outline-none whitespace-nowrap ${
+          className={`flex items-center gap-1 px-2.5 py-2 leading-5 cursor-pointer text-[13px] font-medium uppercase transition-all tracking-wide outline-none whitespace-nowrap ${
             isOpen ? 'text-[#4A93C4]' : 'text-[#3c4043] hover:text-[#4A93C4]'
           }`}
         >

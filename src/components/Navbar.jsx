@@ -372,13 +372,13 @@ const Navbar = () => {
 
       <nav className={`w-full transition-all duration-300 relative ${
         isScrolled 
-          ? 'py-2.5 bg-white/95 backdrop-blur-md shadow-[0_1px_3px_0_rgba(60,64,67,0.15)]' 
-          : 'py-4 bg-white'
+          ? 'py-1 lg:py-1.5 bg-white/95 backdrop-blur-md shadow-[0_1px_3px_0_rgba(60,64,67,0.15)]' 
+          : 'py-1.5 lg:py-2 bg-white'
       }`}>
         <div className="w-full px-3 lg:px-4 flex justify-between items-center gap-4">
           <div className="flex items-center gap-2 lg:gap-4 shrink-0">
             <Link to="/" className="flex items-center cursor-pointer shrink-0 min-w-fit">
-              <img src={logo} alt="Top Tec" className="h-7 lg:h-9 w-auto object-contain shrink-0" />
+              <img src={logo} alt="Top Tec" className="h-8 sm:h-9 w-auto object-contain shrink-0" />
             </Link>
 
             <AnimatePresence>
@@ -397,13 +397,13 @@ const Navbar = () => {
             </AnimatePresence>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2">
             {/* Desktop Search Bar */}
             <div className="hidden lg:flex items-center gap-3 relative" ref={searchRef}>
-              <div className="w-10 h-10 flex items-center justify-center relative">
+              <div className="w-9 h-9 flex items-center justify-center relative">
                 <button 
                   onClick={() => setIsSearchOpen(!isSearchOpen)}
-                  className={`absolute right-0 p-2.5 rounded-full transition-all duration-500 ease-in-out cursor-pointer z-40 ${isSearchOpen ? 'text-[#4A93C4] bg-white shadow-sm' : 'text-[#5f6368] hover:bg-gray-100'}`}
+                  className={`absolute right-0 p-2 rounded-full transition-all duration-500 ease-in-out cursor-pointer z-40 ${isSearchOpen ? 'text-[#4A93C4] bg-white shadow-sm' : 'text-[#5f6368] hover:bg-gray-100'}`}
                 >
                   <SearchIcon size={20} />
                 </button>
@@ -413,8 +413,8 @@ const Navbar = () => {
                    placeholder="Search..."
                    value={searchQuery}
                    onChange={(e) => setSearchQuery(e.target.value)}
-                   className={`absolute right-0 h-10 pr-12 pl-6 bg-gray-50 border border-transparent rounded-full text-sm outline-none transition-all duration-500 ease-in-out z-30 ${
-                     isSearchOpen ? 'w-125 opacity-100 border-gray-100' : 'w-10 opacity-0 pointer-events-none'
+                   className={`absolute right-0 h-9 pr-11 pl-5 bg-gray-50 border border-transparent rounded-full text-sm outline-none transition-all duration-500 ease-in-out z-30 ${
+                     isSearchOpen ? 'w-125 opacity-100 border-gray-100' : 'w-9 opacity-0 pointer-events-none'
                    }`}
                 />
 
@@ -426,21 +426,21 @@ const Navbar = () => {
                 />
               </div>
 
-              <Link to="/about" className="text-[13px] font-bold text-[#3c4043] hover:text-[#4A93C4] transition-all uppercase tracking-wide whitespace-nowrap mr-2">
+              <Link to="/about" className="text-[13px] leading-4 font-bold text-[#3c4043] hover:text-[#4A93C4] transition-all uppercase tracking-wide whitespace-nowrap mr-2">
                 About Us
               </Link>
             </div>
 
             {/* Always visible on Mobile: Contact & Menu */}
-            <Link to="/contact" className="px-4 lg:px-6 py-2 lg:py-2.5 bg-[#4A93C4] text-white rounded-full font-medium text-xs lg:text-sm hover:bg-[#3b7ba8] hover:shadow-md transition-all active:scale-95 whitespace-nowrap uppercase">
+            <Link to="/contact" className="px-4 lg:px-5 py-1.5 lg:py-2 bg-[#4A93C4] text-white rounded-full font-medium text-xs lg:text-[13px] leading-4 hover:bg-[#3b7ba8] hover:shadow-md transition-all active:scale-95 whitespace-nowrap uppercase">
               Contact
             </Link>
 
             <button 
-              className="p-3 text-[#5f6368] hover:bg-gray-100 rounded-full transition-all lg:hidden cursor-pointer"
+              className="p-1.5 sm:p-2 text-[#5f6368] hover:bg-gray-100 rounded-full transition-all lg:hidden cursor-pointer"
               onClick={() => setIsMobileMenuOpen(true)}
             >
-              <Menu size={22} />
+              <Menu size={20} />
             </button>
           </div>
         </div>
@@ -456,10 +456,10 @@ const Navbar = () => {
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
             className="fixed inset-0 bg-white z-100 flex flex-col"
           >
-            <div className="p-4 flex justify-between items-center border-b border-gray-100">
-              <img src={logo} alt="Top Tec" className="h-6 w-auto" />
-              <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 hover:bg-gray-100 rounded-full cursor-pointer">
-                <X size={24} />
+            <div className="px-4 py-2.5 flex justify-between items-center border-b border-gray-100">
+              <img src={logo} alt="Top Tec" className="h-8 sm:h-9 w-auto object-contain" />
+              <button onClick={() => setIsMobileMenuOpen(false)} className="p-1.5 hover:bg-gray-100 rounded-full cursor-pointer">
+                <X size={22} />
               </button>
             </div>
             <div className="p-6 flex flex-col gap-2 overflow-y-auto">

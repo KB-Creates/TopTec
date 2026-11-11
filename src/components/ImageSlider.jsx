@@ -10,7 +10,7 @@ import furnitureMobile from '../assets/furniture mobile.jpeg'
 
 const ImageSlider = ({ 
   images = [], 
-  autoPlayInterval = 8000,
+  autoPlayInterval = 5000,
   className = ''
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -85,7 +85,7 @@ const ImageSlider = ({
 
   return (
     <div 
-      className={`relative w-full h-125 sm:h-125 md:h-150 lg:h-160 overflow-hidden shadow-2xl group bg-gray-900 ${className}`}
+      className={`relative w-full aspect-18/25 sm:aspect-5/2 overflow-hidden shadow-2xl group bg-gray-900 ${className}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -108,12 +108,12 @@ const ImageSlider = ({
             <div className="relative w-full h-full">
               <picture>
                 {slides[currentIndex].mobileUrl && (
-                  <source media="(max-width: 640px)" srcSet={slides[currentIndex].mobileUrl} />
+                  <source media="(max-width: 639px)" srcSet={slides[currentIndex].mobileUrl} />
                 )}
                 <img
                   src={slides[currentIndex].url}
                   alt={slides[currentIndex].title || 'Banner'}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </picture>
             </div>
@@ -149,7 +149,7 @@ const ImageSlider = ({
       </div>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2 sm:gap-3">
+      <div className="absolute bottom-2.5 sm:bottom-5 md:bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2 sm:gap-3">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -162,24 +162,6 @@ const ImageSlider = ({
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
-      </div>
-
-      {/* Progress Bar */}
-      {!isHovered && (
-        <motion.div
-          className="absolute top-0 left-0 h-0.5 sm:h-1 bg-[#4A93C4] z-30"
-          initial={{ width: '0%' }}
-          animate={{ width: '100%' }}
-          transition={{ duration: autoPlayInterval / 1000, ease: 'linear' }}
-          key={currentIndex}
-        />
-      )}
-
-      {/* Slide Counter */}
-      <div className="absolute top-16 sm:top-6 md:top-8 right-4 sm:right-6 md:right-8 z-20 px-3 sm:px-4 py-1.5 sm:py-2 bg-black/40 backdrop-blur-md rounded-full border border-white/20">
-        <span className="text-white text-xs sm:text-xs md:text-sm font-semibold">
-          {String(currentIndex + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
-        </span>
       </div>
     </div>
   );
