@@ -47,11 +47,10 @@ const SubcategoryPage = () => {
   return (
     <div className="min-h-screen bg-white selection:bg-[#4A93C4]/20">
       {/* Hero Section */}
-      <section className="relative pt-42 pb-16 md:pt-32 md:pb-24 lg:pt-42 lg:pb-28 overflow-hidden">
+      <section className="relative pt-42 pb-6 md:pt-32 md:pb-8 lg:pt-42 lg:pb-8 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 bg-linear-to-b from-[#F8F9FA] to-white"></div>
           <div className="absolute top-[-20%] left-0 w-full sm:w-250 h-150 bg-linear-to-r from-[#4A93C4]/10 to-transparent rounded-full blur-[120px] opacity-60"></div>
-          <div className="absolute bottom-0 left-0 w-full h-px bg-linear-to-r from-transparent via-gray-100 to-transparent"></div>
           
           <motion.div 
             animate={{ y: [0, -15, 0], opacity: [0.3, 0.5, 0.3] }}
@@ -94,7 +93,7 @@ const SubcategoryPage = () => {
       </section>
 
       {/* Main Content Grid */}
-      <section className="py-12 md:py-20 lg:py-28 bg-white relative">
+      <section className="pt-4 pb-12 md:pt-6 md:pb-20 lg:pt-6 lg:pb-24 bg-white relative">
         <div className="container mx-auto px-4 sm:px-8 lg:px-16">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
             

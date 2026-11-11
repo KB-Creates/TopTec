@@ -27,12 +27,11 @@ const CategoryPage = ({
   return (
     <div className="min-h-screen bg-white selection:bg-[#4A93C4]/20">
       {/* Ultra-Premium Hero Section */}
-      <section className="relative pt-42 pb-16 md:pt-32 md:pb-24 lg:pt-42 lg:pb-32 overflow-hidden">
+      <section className="relative pt-42 pb-8 md:pt-32 md:pb-10 lg:pt-42 lg:pb-10 overflow-hidden">
         {/* Advanced Background System */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 bg-linear-to-b from-[#F8F9FA] to-white"></div>
           <div className="absolute top-[-20%] left-0 w-full sm:w-250 h-150 bg-linear-to-r from-[#4A93C4]/10 to-transparent rounded-full blur-[120px] opacity-60"></div>
-          <div className="absolute bottom-0 left-0 w-full h-px bg-linear-to-r from-transparent via-gray-100 to-transparent"></div>
           
           {/* Animated Background Shapes */}
           <motion.div 
@@ -115,7 +114,7 @@ const CategoryPage = ({
       </section>
 
       {/* Structured Content with Premium Grid */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white relative">
+      <section className="pt-4 pb-16 md:pt-6 md:pb-24 lg:pt-6 lg:pb-28 bg-white relative">
         <div className="container mx-auto px-4 sm:px-8 lg:px-16">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
             {/* Left Column: Products & Subcats */}

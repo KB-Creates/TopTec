@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { 
   ArrowLeft, 
@@ -34,6 +34,24 @@ const ProductPage = () => {
     }
   };
 
+  const galleryImages = useMemo(() => {
+    if (Array.isArray(product.images) && product.images.length > 0) {
+      return product.images.map((item) =>
+        typeof item === 'string' ? { src: item, label: '' } : item
+      );
+    }
+    return [{ src: product.image, label: '' }];
+  }, [product.image, product.images]);
+
+  const [selection, setSelection] = useState({ slug, index: 0 });
+  const selectedImageIndex = selection.slug === slug ? selection.index : 0;
+
+  const activeImageItem = galleryImages[selectedImageIndex] || galleryImages[0];
+  const activeImageSrc = activeImageItem?.src || product.image;
+  const activeImageAlt = activeImageItem?.label
+    ? `${product.name} - ${activeImageItem.label}`
+    : product.name;
+
   return (
     <div className="min-h-screen bg-white pt-10">
       {/* Premium Header/Nav Spacer */}
@@ -54,20 +72,58 @@ const ProductPage = () => {
         {/* Hero Product Section */}
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
           {/* Left: Product Image Display */}
-          <div className="relative">
-            <div className="relative z-10 rounded-[2.5rem] overflow-hidden bg-[#F8F9FA] shadow-2xl shadow-gray-200/50 group">
-              <img 
-                src={product.image} 
-                alt={product.name} 
-                className="w-full h-auto aspect-square object-cover"
-              />
-              <button className="absolute bottom-6 right-6 w-12 h-12 bg-white/90 backdrop-blur-md rounded-2xl flex items-center justify-center text-[#202124] shadow-lg hover:bg-white transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
-                <Maximize2 size={20} />
-              </button>
+          <div>
+            <div className="relative">
+              <div className="relative z-10 rounded-[2.5rem] overflow-hidden bg-[#F8F9FA] shadow-2xl shadow-gray-200/50 group">
+                <img 
+                  src={activeImageSrc} 
+                  alt={activeImageAlt} 
+                  className="w-full h-auto aspect-square object-cover"
+                />
+                <button className="absolute bottom-6 right-6 w-12 h-12 bg-white/90 backdrop-blur-md rounded-2xl flex items-center justify-center text-[#202124] shadow-lg hover:bg-white transition-all opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
+                  <Maximize2 size={20} />
+                </button>
+              </div>
+              
+              {/* Aesthetic Underlay */}
+              <div className="absolute -inset-4 bg-linear-to-br from-[#4A93C4]/10 to-transparent z-0 rounded-[3rem] blur-2xl opacity-50"></div>
             </div>
-            
-            {/* Aesthetic Underlay */}
-            <div className="absolute -inset-4 bg-linear-to-br from-[#4A93C4]/10 to-transparent z-0 rounded-[3rem] blur-2xl opacity-50"></div>
+
+            {galleryImages.length > 1 && (
+              <div className="relative z-10 mt-4 grid grid-cols-3 gap-3">
+                {galleryImages.map((imgItem, idx) => {
+                  const isSelected = idx === selectedImageIndex;
+                  return (
+                    <button
+                      key={imgItem.src}
+                      type="button"
+                      onClick={() => setSelection({ slug, index: idx })}
+                      aria-pressed={isSelected}
+                      className={`group flex flex-col items-center gap-1.5 p-1.5 rounded-2xl border bg-white transition-all cursor-pointer ${
+                        isSelected
+                          ? 'border-[#4A93C4] ring-2 ring-[#4A93C4]/20 shadow-md shadow-[#4A93C4]/10'
+                          : 'border-gray-200 hover:border-gray-300 opacity-75 hover:opacity-100'
+                      }`}
+                    >
+                      <div className="w-full aspect-square rounded-xl overflow-hidden bg-[#F8F9FA]">
+                        <img
+                          src={imgItem.src}
+                          alt={imgItem.label ? `${product.name} - ${imgItem.label}` : `${product.name} view ${idx + 1}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      {imgItem.label && (
+                        <span className={`text-[11px] font-semibold tracking-wide pb-0.5 ${
+                          isSelected ? 'text-[#4A93C4]' : 'text-[#5f6368]'
+                        }`}>
+                          {imgItem.label}
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
           {/* Right: Product Basic Info & CTA */}

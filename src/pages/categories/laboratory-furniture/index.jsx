@@ -30,11 +30,9 @@ const LaboratoryFurniture = () => {
   return (
     <CategoryPage 
       title="Laboratory Furniture"
-      description={`We offer high-quality, locally manufactured Laboratory Furniture designed for modern and demanding laboratory environments. Our solutions are available in both Powder Coated and Stainless Steel finishes, ensuring durability, hygiene, and long-term performance.
-
-      With in-house manufacturing and an experienced technical team, we provide fully customized solutions tailored to each client’s specific requirements. Our focus on precision, quality workmanship, and functional design ensures reliable solutions for a wide range of laboratory applications.`}
+      description={`As a premier laboratory furniture manufacturer in Pakistan, we engineer durable, fully compliant lab environments tailored to the demanding standards of research institutions, pharmaceutical QC departments, and educational laboratories. Our complete product lineup—spanning chemical-resistant epoxy resin workbenches, hygienic stainless-steel tables, modular casework, heavy-duty chemical storage cabinets, and high-efficiency fume extraction hoods—is built for safety, ergonomic comfort, and decades of rigorous daily use. Backed by end-to-end local support, including on-site surveys, custom CAD layouts, utility integration, and professional installation across Pakistan, we deliver fully certified, reconfigurable workspaces at factory-direct, highly competitive prices.`}
       icon={<Building2 size={32} />}
-      image="/slider/lab-work.jpg"
+      image="/images/labfurniture.jpg"
       subcategories={subcategories}
       products={laboratoryFurnitureProducts}
     />
